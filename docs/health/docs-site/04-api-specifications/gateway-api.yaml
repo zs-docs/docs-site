@@ -1,0 +1,29 @@
+openapi: 3.0.0
+info:
+  title: "ZARISH Gateway"
+  version: "1.0.0"
+  description: "API Gateway for ZARISH HIS system"
+servers:
+  - url: https://zs-his.github.io/docs/v1
+    description: "Staging and Documentation server"
+  - url: https://api.zarishsphere.com/v1
+    description: "Production server (planned)"
+paths:
+  /health:
+    get:
+      summary: "Health check endpoint"
+      description: "Check if the API gateway is healthy"
+      responses:
+        '200':
+          description: "Gateway is healthy"
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  status:
+                    type: string
+                    example: "healthy"
+                  timestamp:
+                    type: string
+                    format: date-time

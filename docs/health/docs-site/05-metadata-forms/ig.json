@@ -1,0 +1,44 @@
+{
+  "resourceType": "ImplementationGuide",
+  "id": "bd.zarish.his.core",
+  "url": "https://zarish.health/fhir/ImplementationGuide/bd.zarish.his.core",
+  "version": "1.0.0",
+  "name": "ZARISHHISCore",
+  "title": "ZARISH Health Information System - Core Profiles",
+  "status": "draft",
+  "publisher": "ZARISH",
+  "description": "FHIR R5 profiles for modular hospital information system in Bangladesh",
+  "fhirVersion": ["5.0.0"],
+  "definition": {
+    "resource": [
+      {
+        "reference": {
+          "reference": "StructureDefinition/zarish-patient"
+        },
+        "name": "ZARISH Patient Profile",
+        "description": "Patient profile for ZARISH HIS"
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/zarish-encounter"
+        },
+        "name": "ZARISH Encounter Profile",
+        "description": "Encounter profile for ZARISH HIS"
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/zarish-observation"
+        },
+        "name": "ZARISH Observation Profile",
+        "description": "Observation profile for ZARISH HIS"
+      }
+    ],
+    "page": [
+      {
+        "nameUrl": "index.html",
+        "title": "Home",
+        "generation": "markdown"
+      }
+    ]
+  }
+}

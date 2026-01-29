@@ -1,0 +1,65 @@
+{
+  "name": "CWC Enrolment Form",
+  "description": "MCH-CS Enrollment form",
+  "version": "2.0",
+  "published": true,
+  "uuid": "8553d869-bdc8-4287-8505-910c7c998aff",
+  "retired": false,
+  "encounter": "CWC Enrollment",
+  "meta": {
+    "programs": {
+      "uuid": "c2ecdf11-97cd-432a-a971-cfd9bd296b83",
+      "isEnrollment": true,
+      "discontinuationDateQuestionId": ""
+    }
+  },
+  "pages": [
+    {
+      "label": "CWC Enrolment Form",
+      "sections": [
+        {
+            "label": "Visit Details",
+            "isExpanded": "true",
+            "questions": [
+              {
+                "label": "Date:",
+                "type": "encounterDatetime",
+                "required": "true",
+                "questionOptions": {
+                  "rendering": "ui-select-extended"
+                },
+                "validators": [
+                  {
+                    "type": "date",
+                    "allowFutureDates": "false"
+                  }
+                ],
+                "id": "encDate"
+              },
+              {
+                "label": "Provider:",
+                "type": "encounterProvider",
+                "required": "true",
+                "questionOptions": {
+                  "rendering": "ui-select-extended"
+                },
+                "id": "encProvider "
+              },
+              {
+                "label": "Location:",
+                "type": "encounterLocation",
+                "required": "true",
+                "questionOptions": {
+                  "rendering": "ui-select-extended"
+                },
+                "id": "encLocation"
+              }
+            ]
+          }
+      ]
+    }
+  ],
+  "processor": "EncounterFormProcessor",
+  "referencedForms": [],
+  "encounterType": "415f5136-ca4a-49a8-8db3-f994187c3af6"
+}

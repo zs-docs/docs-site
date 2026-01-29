@@ -1,0 +1,65 @@
+{
+    "name": "Nutrition Enrollment Form",
+    "description": "Nutritional Enrollment Encounter",
+    "version": "1.0",
+    "published": true,
+    "uuid": "849e88cc-6a78-463a-a4d2-e4e8c2f795bc",
+    "retired": false,
+    "encounter": "Nutrition Clinic",
+    "meta": {
+      "programs": {
+        "uuid": "42b654c5-de50-4fb9-b054-1ecc2b6f266b",
+        "isEnrollment": true,
+        "discontinuationDateQuestionId": ""
+      }
+    },
+    "pages": [
+        {
+        "label": "Nutrition Program Enrollment",
+        "sections": [
+          {
+            "label": "Visit Details",
+            "isExpanded": "true",
+            "questions": [
+              {
+                "label": "Date:",
+                "type": "encounterDatetime",
+                "required": "true",
+                "questionOptions": {
+                  "rendering": "ui-select-extended"
+                },
+                "validators": [
+                  {
+                    "type": "date",
+                    "allowFutureDates": "false"
+                  }
+                ],
+                "id": "encDate"
+              },
+              {
+                "label": "Provider:",
+                "type": "encounterProvider",
+                "required": "true",
+                "questionOptions": {
+                  "rendering": "ui-select-extended"
+                },
+                "id": "encProvider "
+              },
+              {
+                "label": "Location:",
+                "type": "encounterLocation",
+                "required": "true",
+                "questionOptions": {
+                  "rendering": "ui-select-extended"
+                },
+                "id": "encLocation"
+              }
+            ]
+          }
+        ]
+    }
+  ],
+  "processor": "EncounterFormProcessor",
+    "referencedForms": [],
+    "encounterType": "cff2c1c2-b5ff-4b06-a0aa-6973007b89cb"
+}

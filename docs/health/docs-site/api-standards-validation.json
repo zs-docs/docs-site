@@ -1,0 +1,40 @@
+{
+  "api_specifications": [
+    {
+      "valid": true,
+      "issues": [
+        "Server URL doesn't match pattern: https://zs-his.github.io/docs/v1",
+        "Server URL doesn't match pattern: https://api.zarishsphere.com/v1"
+      ],
+      "warnings": [],
+      "file": "gateway-api.yaml"
+    },
+    {
+      "valid": true,
+      "issues": [
+        "Server URL doesn't match pattern: https://zs-his.github.io/docs/v1/patient-registry",
+        "Server URL doesn't match pattern: https://staging-api.zarishsphere.com/v1/patient-registry"
+      ],
+      "warnings": [
+        "Path segment might need to be plural: patient-registry",
+        "Path segment might need to be plural: patient-registry",
+        "Path segment might need to be plural: patient-registry",
+        "Path segment might need to be plural: search"
+      ],
+      "file": "patient-registry-api.yaml"
+    }
+  ],
+  "fhir_standards": [
+    {
+      "file": "fhir-r5-naming.md",
+      "valid": true,
+      "issues": [],
+      "warnings": []
+    }
+  ],
+  "consistency": {
+    "consistent": true,
+    "issues": []
+  },
+  "generated_at": "2026-01-21T10:41:08.018813"
+}

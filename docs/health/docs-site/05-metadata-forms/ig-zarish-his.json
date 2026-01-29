@@ -1,0 +1,163 @@
+{
+  "resourceType": "ImplementationGuide",
+  "id": "zarish-his-core",
+  "url": "https://fhir.zs-his.com/ImplementationGuide/zarish-his-core",
+  "version": "1.0.0",
+  "name": "ZARISHHISCore",
+  "title": "ZARISH Hospital Information System - Core Implementation Guide",
+  "status": "active",
+  "publisher": "ZARISH Health Tech",
+  "description": "FHIR R5 Implementation Guide for ZARISH Hospital Information System, providing comprehensive healthcare data management for Bangladesh hospitals and clinics with modern microservices architecture.",
+  "fhirVersion": ["5.0.0"],
+  "copyright": "© 2026 ZARISH Health Tech. All rights reserved.",
+  "license": "Apache-2.0",
+  "contact": [
+    {
+      "name": "FHIR Implementation Team",
+      "telecom": [
+        {
+          "system": "email",
+          "value": "fhir-team@zs-his.com",
+          "use": "work"
+        },
+        {
+          "system": "url",
+          "value": "https://zs-his.com/contact",
+          "use": "work"
+        }
+      ]
+    }
+  ],
+  "jurisdiction": [
+    {
+      "coding": [
+        {
+          "system": "urn:iso:std:iso:3166",
+          "code": "BD",
+          "display": "Bangladesh"
+        }
+      ]
+    }
+  ],
+  "dependsOn": [
+    {
+      "id": "hl7.fhir.r5.core",
+      "uri": "http://hl7.org/fhir/R5",
+      "packageId": "hl7.fhir.r5.core",
+      "version": "5.0.0"
+    }
+  ],
+  "definition": {
+    "resource": [
+      {
+        "reference": {
+          "reference": "StructureDefinition/zarish-patient",
+          "type": "StructureDefinition"
+        },
+        "name": "ZARISH Patient Profile",
+        "description": "Patient profile extended for ZARISH HIS with Bangladesh-specific identifiers, local requirements, and microservices integration.",
+        "isExample": false
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/zarish-encounter",
+          "type": "StructureDefinition"
+        },
+        "name": "ZARISH Encounter Profile",
+        "description": "Encounter profile for ZARISH HIS with enhanced service type categorization and billing integration.",
+        "isExample": false
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/zarish-observation",
+          "type": "StructureDefinition"
+        },
+        "name": "ZARISH Observation Profile",
+        "description": "Observation profile for ZARISH HIS with LOINC coding support and local laboratory standards.",
+        "isExample": false
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/zarish-medication-request",
+          "type": "StructureDefinition"
+        },
+        "name": "ZARISH MedicationRequest Profile",
+        "description": "MedicationRequest profile for ZARISH HIS with Bangladesh drug registry integration.",
+        "isExample": false
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/zarish-practitioner",
+          "type": "StructureDefinition"
+        },
+        "name": "ZARISH Practitioner Profile",
+        "description": "Practitioner profile for ZARISH HIS with Bangladesh medical council registration.",
+        "isExample": false
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/zarish-organization",
+          "type": "StructureDefinition"
+        },
+        "name": "ZARISH Organization Profile",
+        "description": "Organization profile for ZARISH HIS with Bangladesh healthcare facility registration.",
+        "isExample": false
+      }
+    ],
+    "page": [
+      {
+        "nameUrl": "index.html",
+        "title": "Home",
+        "generation": "html"
+      },
+      {
+        "nameUrl": "background.html",
+        "title": "Background",
+        "generation": "markdown"
+      },
+      {
+        "nameUrl": "architecture.html",
+        "title": "Architecture",
+        "generation": "markdown"
+      },
+      {
+        "nameUrl": "api-documentation.html",
+        "title": "API Documentation",
+        "generation": "markdown"
+      },
+      {
+        "nameUrl": "deployment.html",
+        "title": "Deployment",
+        "generation": "markdown"
+      },
+      {
+        "nameUrl": "examples.html",
+        "title": "Examples",
+        "generation": "html"
+      },
+      {
+        "nameUrl": "downloads.html",
+        "title": "Downloads",
+        "generation": "html"
+      }
+    ],
+    "parameter": [
+      {
+        "code": "copyrightyear",
+        "value": "2026+"
+      },
+      {
+        "code": "releaselabel",
+        "value": "CI Build"
+      },
+      {
+        "code": "autoload-resources",
+        "value": true
+      },
+      {
+        "code": "usage-stats",
+        "value": "https://analytics.zs-his.com/fhir-ig"
+      }
+    ]
+  }
+}

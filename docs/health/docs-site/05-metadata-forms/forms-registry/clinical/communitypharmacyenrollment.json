@@ -1,0 +1,63 @@
+{
+  "name": "CPM Enrollment Form",
+  "description": "Community Pharmacy Model Enrollment form",
+  "version": "1.1",
+  "published": true,
+  "uuid": "f01c67f7-2293-4a6a-b0f6-5db0fb5934dd",
+  "retired": false,
+  "encounter": "CPM Enrollment Encounter",
+  "meta": {
+    "programs": {
+      "uuid": "8cd42506-2ebd-485f-89d6-4bb9ed328ccc",
+      "isEnrollment": true,
+      "enrollmentDateQuestionId": ""
+       }
+    },
+  "pages": [
+    {
+      "label": "Visit Details",
+      "sections": [
+        {
+          "label": "Encounter Details",
+          "isExpanded": "true",
+          "questions": [
+            {
+              "label": "Enrolment date:",
+              "type": "encounterDatetime",
+              "required": "true",
+              "id": "encDate",
+              "questionOptions": {
+                "rendering": "date"
+              },
+              "validators": [
+                {
+                  "type": "date",
+                  "allowFutureDates": "false"
+                }
+              ]
+            },
+            {
+              "label": "Provider:",
+              "type": "encounterProvider",
+              "required": "true",
+              "questionOptions": {
+                "rendering": "ui-select-extended"
+              },
+              "id": "encProvider "
+            },
+            {
+              "label": "Location:",
+              "type": "encounterLocation",
+              "required": "true",
+              "questionOptions": {
+                "rendering": "ui-select-extended"
+              },
+              "id": "encLocation"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "encounterType": "e0700664-90b6-4480-aad2-6e0a00babd66"
+}

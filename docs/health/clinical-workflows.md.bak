@@ -1,0 +1,761 @@
+---
+title: "Clinical Workflows and Care Pathways"
+sidebar_label: "Clinical Workflows"
+description: "Comprehensive guide to clinical workflows, care pathways, and medical procedures in ZARISH SPHERE"
+keywords: [clinical workflows, care pathways, medical procedures, triage, emergency care, chronic disease management]
+---
+
+# Clinical Workflows and Care Pathways
+
+## Overview
+
+ZARISH SPHERE provides standardized clinical workflows optimized for humanitarian and low-resource settings. These workflows are designed to deliver quality care while managing resource constraints, ensuring patient safety, and maintaining data integrity.
+
+## Core Clinical Workflow Architecture
+
+### Workflow Components
+
+```
+Clinical Workflow System
+├── Patient Triage & Assessment
+│   ├── Emergency Triage Protocol
+│   ├── Primary Assessment
+│   └── Risk Stratification
+├── Care Pathways
+│   ├── Acute Care Pathways
+│   ├── Chronic Disease Management
+│   └── Preventive Care Protocols
+├── Clinical Decision Support
+│   ├── Diagnostic Algorithms
+│   ├── Treatment Guidelines
+│   └── Drug Interaction Checking
+└── Quality Assurance
+    ├── Clinical Audits
+    ├── Outcome Tracking
+    └── Performance Metrics
+```
+
+## Emergency Triage Protocols
+
+### TSI (Triage Severity Index) System
+
+#### Triage Categories
+
+| Category | Color Code | Wait Time | Clinical Criteria | Action Required |
+|----------|------------|------------|-------------------|-----------------|
+| **Immediate** | Red | 0 minutes | Life-threatening conditions | Immediate medical intervention |
+| **Urgent** | Yellow | 15 minutes | Potentially serious conditions | Rapid assessment and treatment |
+| **Delayed** | Green | 60 minutes | Non-life-threatening conditions | Standard medical care |
+| **Expectant** | Black | Variable | Unlikely to survive | Comfort care only |
+
+#### Triage Algorithm
+
+```mermaid
+flowchart TD
+    A[Patient Arrival] --> B{Airway Clear?}
+    B -->|No| C[Immediate - Red]
+    B -->|Yes| D{Breathing Normal?}
+    D -->|No| C
+    D -->|Yes| E{Circulation Adequate?}
+    E -->|No| C
+    E -->|Yes| F{Disability?}
+    F -->|Severe| G[Urgent - Yellow]
+    F -->|Mild| H{Pregnant/Elderly?}
+    H -->|Yes| G
+    H -->|No| I[Delayed - Green]
+    
+    C --> J[Immediate Treatment Area]
+    G --> K[Urgent Treatment Area]
+    I --> L[Delayed Treatment Area]
+```
+
+#### Triage Assessment Protocol
+
+**Step 1: Airway Assessment**
+
+```json
+{
+  "assessment": "airway",
+  "findings": {
+    "patent": true,
+    "obstruction": false,
+    "protection": "maintained"
+  },
+  "triageScore": {
+    "category": "green",
+    "points": 0
+  }
+}
+```
+
+**Step 2: Breathing Assessment**
+
+```json
+{
+  "assessment": "breathing",
+  "findings": {
+    "respiratoryRate": 24,
+    "oxygenSaturation": 94,
+    "accessoryMuscleUse": false,
+    "breathSounds": "clear bilateral"
+  },
+  "triageScore": {
+    "category": "green",
+    "points": 0
+  }
+}
+```
+
+**Step 3: Circulation Assessment**
+
+```json
+{
+  "assessment": "circulation",
+  "findings": {
+    "heartRate": 88,
+    "bloodPressure": "120/80",
+    "capillaryRefill": "<2 seconds",
+    "skinColor": "pink",
+    "pulseStrength": "strong"
+  },
+  "triageScore": {
+    "category": "green",
+    "points": 0
+  }
+}
+```
+
+### Emergency Conditions Requiring Immediate Care
+
+#### Life-Threatening Conditions
+
+- **Airway Obstruction** - Complete or partial airway compromise
+- **Severe Respiratory Distress** - RR greater than 30, SpO2 less than 90%
+- **Cardiac Arrest** - No pulse, apnea
+- **Severe Hemorrhage** - Active bleeding, hypovolemic shock
+- **Major Trauma** - Multiple injuries, GCS less than 8
+- **Severe Burns** - greater than 20% TBSA or airway involvement
+- **Anaphylaxis** - Severe allergic reaction
+- **Diabetic Ketoacidosis** - DKA with altered mental status
+
+#### Urgent Conditions
+
+- **Chest Pain** - Possible cardiac origin
+- **Stroke Symptoms** - FAST positive
+- **Severe Abdominal Pain** - Possible surgical abdomen
+- **Fever greater than 39°C** - With systemic symptoms
+- **Dehydration** - Moderate to severe
+- **Fractures** - Open or displaced
+
+## Care Pathways
+
+### Acute Respiratory Infections (ARI) Pathway
+
+#### Initial Assessment
+
+```json
+{
+  "pathway": "ARI",
+  "step": "initial_assessment",
+  "criteria": {
+    "symptoms": ["cough", "fever", "difficulty_breathing"],
+    "duration": "<14 days",
+    "severity": "mild_to_moderate"
+  },
+  "exclusions": [
+    "chronic_respiratory_disease",
+    "immunocompromised",
+    "age_<2_months"
+  ]
+}
+```
+
+#### Decision Tree
+
+```mermaid
+flowchart TD
+    A[ARI Presentation] --> B{Respiratory Distress?}
+    B -->|Yes| C[Severe ARI]
+    B -->|No| D{Fever >38.5°C?}
+    D -->|Yes| E[Moderate ARI]
+    D -->|No| F[Mild ARI]
+    
+    C --> G[Urgent Referral]
+    E --> H[Antibiotic Consideration]
+    F --> I[Supportive Care]
+    
+    H --> J{Pneumonia Signs?}
+    J -->|Yes| K[Amoxicillin 500mg TID]
+    J -->|No| L[Supportive Care]
+    
+    I --> M[Paracetamol PRN]
+    I --> N[Fluids + Rest]
+    K --> O[Follow-up 48hrs]
+    L --> P[Follow-up 3 days]
+```
+
+#### Treatment Protocol
+
+**Mild ARI**
+
+```json
+{
+  "treatment": {
+    "medications": [
+      {
+        "name": "Paracetamol",
+        "dosage": "10-15 mg/kg",
+        "frequency": "q6h PRN",
+        "maxDaily": "60 mg/kg"
+      }
+    ],
+    "supportiveCare": [
+      "Increased fluid intake",
+      "Rest",
+      "Nasal saline drops",
+      "Warm compresses"
+    ],
+    "followUp": "3 days or sooner if worsening"
+  }
+}
+```
+
+**Moderate ARI with Pneumonia**
+
+```json
+{
+  "treatment": {
+    "medications": [
+      {
+        "name": "Amoxicillin",
+        "dosage": "25-50 mg/kg/day",
+        "frequency": "TID",
+        "duration": "7 days"
+      },
+      {
+        "name": "Paracetamol",
+        "dosage": "10-15 mg/kg",
+        "frequency": "q6h PRN"
+      }
+    ],
+    "supportiveCare": [
+      "Oxygen if SpO2 <90%",
+      "IV fluids if unable to drink",
+      "Chest physiotherapy",
+      "Nutritional support"
+    ],
+    "followUp": "48 hours",
+    "redFlags": [
+      "Increased work of breathing",
+      "Decreased consciousness",
+      "Persistent fever >72 hours",
+      "Inability to maintain hydration"
+    ]
+  }
+}
+```
+
+### Diarrheal Disease Management Pathway
+
+#### Dehydration Assessment
+
+**WHO Dehydration Scale**
+
+```json
+{
+  "dehydrationAssessment": {
+    "noDehydration": {
+      "generalCondition": "well, alert",
+      "eyes": "normal",
+      "thirst": "drinks normally",
+      "skinPinch": "instant recoil",
+      "treatment": "Plan A - Home management"
+    },
+    "someDehydration": {
+      "generalCondition": "restless, irritable",
+      "eyes": "sunken",
+      "thirst": "thirsty, drinks eagerly",
+      "skinPinch": "slow recoil",
+      "treatment": "Plan B - ORS therapy"
+    },
+    "severeDehydration": {
+      "generalCondition": "lethargic, unconscious",
+      "eyes": "very sunken",
+      "thirst": "unable to drink or poorly",
+      "skinPinch": "very slow recoil",
+      "treatment": "Plan C - IV/NG rehydration"
+    }
+  }
+}
+```
+
+#### Treatment Plans
+
+**Plan A: Home Management (No Dehydration)**
+
+```json
+{
+  "plan": "A",
+  "fluids": {
+    "ors": "50-100 ml/kg over 4 hours",
+    "maintenance": "100 ml/kg/day"
+  },
+  "nutrition": "Continue feeding, increase frequency",
+  "followUp": "Return if no improvement in 48 hours",
+  "education": [
+    "Hand washing",
+    "Safe water preparation",
+    "Exclusive breastfeeding",
+    "Recognize danger signs"
+  ]
+}
+```
+
+**Plan B: ORS Therapy (Some Dehydration)**
+
+```json
+{
+  "plan": "B",
+  "fluids": {
+    "ors": "75 ml/kg over 4 hours",
+    "maintenance": "100 ml/kg/day after rehydration"
+  },
+  "monitoring": {
+    "vitalSigns": "q1 hour",
+    "hydrationStatus": "q30 minutes",
+    "urineOutput": "monitor"
+  },
+  "dischargeCriteria": [
+    "Well hydrated",
+    "Able to drink ORS",
+    "No danger signs"
+  ]
+}
+```
+
+**Plan C: IV/NG Rehydration (Severe Dehydration)**
+
+```json
+{
+  "plan": "C",
+  "fluids": {
+    "ivRingerLactate": "100 ml/kg over 3 hours",
+    "alternatives": [
+      "Normal saline",
+      "Darrow's solution",
+      "Half-strength Darrow's"
+    ]
+  },
+  "emergency": {
+    "airway": "Ensure patent airway",
+    "breathing": "Assess respiratory status",
+    "circulation": "Monitor vital signs"
+  },
+  "referral": "Immediate transfer to higher level facility"
+}
+```
+
+### Chronic Disease Management
+
+#### Diabetes Mellitus Care Pathway
+
+#### Initial Assessment
+
+```json
+{
+  "condition": "diabetes_mellitus",
+  "initialAssessment": {
+    "symptoms": ["polyuria", "polydipsia", "weight_loss", "fatigue"],
+    "riskFactors": ["family_history", "obesity", "age>40"],
+    "complications": ["retinopathy", "nephropathy", "neuropathy", "cardiovascular"]
+  },
+  "diagnosticCriteria": {
+    "fastingGlucose": "≥126 mg/dL (7.0 mmol/L)",
+    "randomGlucose": "≥200 mg/dL (11.1 mmol/L) with symptoms",
+    "hba1c": "≥6.5%"
+  }
+}
+```
+
+#### Management Protocol
+
+**Type 2 Diabetes**
+
+```json
+{
+  "management": {
+    "lifestyle": {
+      "diet": "Low carbohydrate, high fiber",
+      "exercise": "150 minutes/week moderate intensity",
+      "weightManagement": "Target BMI 18.5-24.9"
+    },
+    "monitoring": {
+      "bloodGlucose": "Fasting and postprandial",
+      "hba1c": "Every 3 months",
+      "bloodPressure": "Each visit",
+      "lipids": "Annually",
+      "kidneyFunction": "Annually",
+      "eyeExam": "Annually",
+      "footExam": "Each visit"
+    },
+    "medications": {
+      "firstLine": "Metformin 500mg BID",
+      "secondLine": "Sulfonylurea or DPP-4 inhibitor",
+      "thirdLine": "Insulin therapy"
+    }
+  }
+}
+```
+
+#### Hypertension Management Pathway
+
+#### Classification and Risk Assessment
+
+```json
+{
+  "bloodPressureClassification": {
+    "normal": "<120/80 mmHg",
+    "elevated": "120-129/<80 mmHg",
+    "stage1": "130-139/80-89 mmHg",
+    "stage2": "≥140/90 mmHg",
+    "hypertensiveCrisis": ">180/120 mmHg"
+  },
+  "riskAssessment": {
+    "cardiovascularRisk": "ASCVD risk calculator",
+    "targetOrganDamage": ["LVH", "retinopathy", "nephropathy"],
+    "comorbidities": ["diabetes", "ckd", "cad", "stroke"]
+  }
+}
+```
+
+#### Treatment Algorithm
+
+```mermaid
+flowchart TD
+    A[BP >140/90] --> B{Stage 2 or >160/100?}
+    B -->|Yes| C[Start 2-drug therapy]
+    B -->|No| D{Stage 1 or comorbidities?}
+    D -->|Yes| E[Single agent + lifestyle]
+    D -->|No| F[Lifestyle modification 3-6 months]
+    
+    C --> G[ACEi/ARB + CCB or Thiazide]
+    E --> H[ACEi/ARB or CCB or Thiazide]
+    F --> I{BP controlled?}
+    I -->|No| H
+    I -->|Yes| J[Continue lifestyle]
+    
+    G --> K[Follow-up 1 month]
+    H --> K
+    K --> L{BP at goal?}
+    L -->|Yes| M[Maintenance therapy]
+    L -->|No| N[Add third agent or increase dose]
+```
+
+## Maternal and Child Health
+
+### Antenatal Care Pathway
+
+#### First Visit (Before 12 weeks)
+
+```json
+{
+  "ancVisit": {
+    "number": 1,
+    "timing": "8-12 weeks gestation",
+    "assessments": [
+      "Confirm pregnancy",
+      "Calculate EDD",
+      "Medical history",
+      "Physical examination",
+      "Baseline labs",
+      "Risk assessment"
+    ],
+    "investigations": [
+      "Hemoglobin/hematocrit",
+      "Blood group & Rh",
+      "VDRL/RPR",
+      "HIV test",
+      "Urine dipstick",
+      "Ultrasound for dating"
+    ],
+    "counseling": [
+      "Nutrition and supplementation",
+      "Danger signs",
+      "Birth preparedness",
+      "Family planning"
+    ]
+  }
+}
+```
+
+#### Subsequent Visits Schedule
+
+```json
+{
+  "ancSchedule": {
+    "visit2": "20-24 weeks",
+    "visit3": "26-30 weeks", 
+    "visit4": "32-34 weeks",
+    "visit5": "36-38 weeks",
+    "visit6": "40-41 weeks",
+    "components": [
+      "Blood pressure",
+      "Weight measurement",
+      "Fundal height",
+      "Fetal heart rate",
+      "Urine protein",
+      "Edema assessment",
+      "Counseling"
+    ]
+  }
+}
+```
+
+### Integrated Management of Childhood Illness (IMCI)
+
+#### General Danger Signs
+
+```json
+{
+  "dangerSigns": [
+    "Not able to drink or breastfeed",
+    "Vomits everything",
+    "Convulsions",
+    "Lethargic or unconscious",
+    "Convulsing now"
+  ],
+  "action": "URGENT referral to hospital"
+}
+```
+
+#### Cough or Difficulty Breathing Assessment
+
+```json
+{
+  "assessment": "respiratory",
+  "keyFindings": {
+    "respiratoryRate": {
+      "2months-<12months": ">50 breaths/min",
+      "12months-<5years": ">40 breaths/min"
+    },
+    "chestIndrawing": "Present",
+    "stridor": "Present",
+    "wheezing": "Present"
+  },
+  "classification": {
+    "severePneumonia": ["Chest indrawing", "Stridor", "Fast breathing"],
+    "pneumonia": ["Fast breathing only"],
+    "noPneumonia": ["No fast breathing", "No chest indrawing"]
+  }
+}
+```
+
+## Clinical Decision Support
+
+### Diagnostic Algorithms
+
+#### Fever Assessment Algorithm
+
+```mermaid
+flowchart TD
+    A[Fever ≥38°C] --> B{Age <2 months?}
+    B -->|Yes| C[Urgent Referral]
+    B -->|No| D{General Danger Signs?}
+    D -->|Yes| C
+    D -->|No| E{Stiff neck or bulging fontanelle?}
+    E -->|Yes| F[Meningitis - Urgent Referral]
+    E -->|No| G{Malaria risk area?}
+    G -->|Yes| H[RDT + Treatment]
+    G -->|No| I{Respiratory symptoms?}
+    I -->|Yes| J[ARI pathway]
+    I -->|No| K{Diarrhea present?}
+    K -->|Yes| L[Diarrhea pathway]
+    K -->|No| M[Other causes - investigate]
+```
+
+### Drug Interaction Checking
+
+#### Common Interaction Database
+
+```json
+{
+  "drugInteractions": [
+    {
+      "drug1": "Warfarin",
+      "drug2": "Aspirin",
+      "severity": "major",
+      "effect": "Increased bleeding risk",
+      "management": "Avoid combination or monitor INR closely"
+    },
+    {
+      "drug1": "Metformin",
+      "drug2": "Iodinated contrast",
+      "severity": "moderate",
+      "effect": "Increased risk of lactic acidosis",
+      "management": "Hold metformin before and after contrast"
+    }
+  ]
+}
+```
+
+## Quality Assurance
+
+### Clinical Indicators
+
+#### Process Indicators
+
+```json
+{
+  "processIndicators": {
+    "triageAccuracy": ">95% correct categorization",
+    "antibioticAppropriateness": ">80% appropriate use",
+    "vaccinationCoverage": ">90% complete schedule",
+    "ancCompletion": ">95% 4+ visits",
+    "documentationQuality": ">90% complete records"
+  }
+}
+```
+
+#### Outcome Indicators
+
+```json
+{
+  "outcomeIndicators": {
+    "mortalityRates": {
+      "under5": "<10/1000 live births",
+      "maternal": "<150/100000 live births"
+    },
+    "complicationRates": {
+      "surgicalSiteInfection": "<2%",
+      "hospitalAcquiredInfection": "<5%"
+    },
+    "readmissionRates": {
+      "30dayReadmission": "<10%"
+    }
+  }
+}
+```
+
+### Clinical Audits
+
+#### Audit Cycle
+
+```mermaid
+flowchart TD
+    A[Select Topic] --> B[Define Criteria]
+    B --> C[Collect Data]
+    C --> D[Analyze Performance]
+    D --> E{Standards Met?}
+    E -->|Yes| F[Monitor Maintenance]
+    E -->|No| G[Identify Problems]
+    G --> H[Implement Changes]
+    H --> I[Re-audit]
+    I --> D
+```
+
+## Implementation Guidelines
+
+### Workflow Integration
+
+#### Electronic Health Record Integration
+
+```json
+{
+  "ehrIntegration": {
+    "clinicalDecisionSupport": {
+      "alerts": ["Drug interactions", "Allergy warnings", "Dose limits"],
+      "prompts": ["Preventive care reminders", "Screening alerts"],
+      "orderSets": ["Standard treatment protocols", "Emergency orders"]
+    },
+    "documentation": {
+      "templates": ["SOAP notes", "Discharge summaries", "Referral letters"],
+      "autoPopulation": ["Vitals", "Medications", "Allergies"],
+      "coding": ["ICD-10", "SNOMED CT", "LOINC"]
+    }
+  }
+}
+```
+
+### Training and Competency
+
+#### Healthcare Worker Training
+
+```json
+{
+  "trainingProgram": {
+    "clinicalSkills": [
+      "Patient assessment",
+      "Triage protocols",
+      "Emergency procedures",
+      "Chronic disease management"
+    ],
+    "systemSkills": [
+      "EHR navigation",
+      "Clinical decision support",
+      "Data entry accuracy",
+      "Report generation"
+    ],
+    "assessment": [
+      "Knowledge tests",
+      "Skills demonstration",
+      "Direct observation",
+      "Chart reviews"
+    ]
+  }
+}
+```
+
+## Emergency Response Protocols
+
+### Mass Casualty Incidents
+
+#### MCI Activation Criteria
+
+```json
+{
+  "mciActivation": {
+    "criteria": [
+      "5+ patients from single incident",
+      "1+ critically injured patient",
+      "Resource overwhelm",
+      "External disaster declaration"
+    ],
+    "responseLevels": {
+      "level1": "5-10 patients",
+      "level2": "11-50 patients", 
+      "level3": "50+ patients"
+    }
+  }
+}
+```
+
+#### MCI Triage System
+
+```json
+{
+  "mciTriage": {
+    "immediate": {
+      "criteria": ["Airway compromise", "Severe bleeding", "Shock"],
+      "color": "Red",
+      "treatment": "Immediate life-saving interventions"
+    },
+    "delayed": {
+      "criteria": ["Serious but stable", "Can wait 30-60 minutes"],
+      "color": "Yellow", 
+      "treatment": "Stabilization and preparation for transport"
+    },
+    "minimal": {
+      "criteria": ["Minor injuries", "Ambulatory"],
+      "color": "Green",
+      "treatment": "Basic first aid, discharge when possible"
+    },
+    "expectant": {
+      "criteria": ["Non-survivable injuries", "Limited resources"],
+      "color": "Black",
+      "treatment": "Comfort care, pain management"
+    }
+  }
+}
+```
+
+This comprehensive clinical workflow system provides standardized, evidence-based care pathways optimized for humanitarian and resource-constrained settings while maintaining high quality and safety standards.

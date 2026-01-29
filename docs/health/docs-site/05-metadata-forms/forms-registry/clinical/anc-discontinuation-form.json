@@ -1,0 +1,111 @@
+{
+	"name": "Antenatal Care (ANC) Discontinuation",
+	"description": "ANC Services Discontinuation",
+	"version": "1.0",
+	"published": true,
+	"uuid": "38885518-c71a-4661-8edf-3db67707e1d1",
+	"retired": false,
+	"encounter": "MCH Mother Discontinuation",
+	"meta": {
+	  "programs": {
+		"uuid": "72635673-0613-4259-916e-e0d5d5ef8f66",
+		"isEnrollment": false,
+		"discontinuationDateQuestionId": "encDate"
+	  }
+	},
+	"pages": [
+	  {
+		"label": "Antenatal Care (ANC) Services Discontinuation",
+		"sections": [
+		  {
+			"label": "Visit Details",
+			"isExpanded": "true",
+			"questions": [
+			  {
+				"label": "Discontinued Date:",
+				"type": "encounterDatetime",
+				"required": "true",
+				"questionOptions": {
+				  "rendering": "ui-select-extended"
+				},
+				"validators": [
+				  {
+					"type": "date",
+					"allowFutureDates": "false"
+				  }
+				],
+				"id": "encDate"
+			  },
+			  {
+				"label": "Provider:",
+				"type": "encounterProvider",
+				"required": "true",
+				"questionOptions": {
+				  "rendering": "ui-select-extended"
+				},
+				"id": "encProvider "
+			  },
+			  {
+				"label": "Location:",
+				"type": "encounterLocation",
+				"required": "true",
+				"questionOptions": {
+				  "rendering": "ui-select-extended"
+				},
+				"id": "encLocation"
+			  }
+			]
+		  },
+		  {
+			"label": "ANC Services Discontinuation",
+			"isExpanded": "true",
+			"questions": [
+			  {
+				"label": "Exit Criteria",
+				"type": "obs",
+				"required": "true",
+				"questionOptions": {
+				  "rendering": "select",
+				  "concept": "161555AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+				  "answers": [
+					{
+					  "concept": "160035AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+					  "label": "Delivered"
+					},
+					{
+						"concept": "1066AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+						"label": "False pregnancy"
+					},
+					{
+						"concept": "48AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+						"label": "Miscarriage"
+					},
+					{
+					  "concept": "159492AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+					  "label": "Transferred Out"
+					},
+					{
+					  "concept": "5240AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+					  "label": "Lost to follow up"
+					},
+					{
+					  "concept": "25bc9a57-6603-401b-b989-60db25e89561",
+					  "label": "Perinatal death (death after 22 completed weeks of gestation)"
+					},
+					{
+					  "concept": "160432AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+					  "label": "Died"
+					}
+				  ]
+				},
+				"id": "idReason"
+			  }
+			]
+		  }
+		]
+	  }
+	],
+	"processor": "EncounterFormProcessor",
+	"referencedForms": [],
+    "encounterType": "97b3aedc-7447-4b2f-a22d-c6fdab6366b3"
+  }

@@ -1,0 +1,65 @@
+{
+    "name": "Family Planning Enrollment Form",
+    "description": "Family Planning Enrollment Encounter",
+    "version": "1.0",
+    "published": true,
+    "uuid": "5a07d260-77d7-477d-8ae5-f5bc2fb4a1e5",
+    "retired": false,
+    "encounter": "Family Planning",
+    "meta": {
+      "programs": {
+        "uuid": "191269d2-9973-4958-9936-f687ed771050",
+        "isEnrollment": true,
+        "discontinuationDateQuestionId": ""
+      }
+    },
+    "pages": [
+        {
+        "label": "Family Planning Enrollment",
+        "sections": [
+          {
+            "label": "Visit Details",
+            "isExpanded": "true",
+            "questions": [
+              {
+                "label": "Date:",
+                "type": "encounterDatetime",
+                "required": "true",
+                "questionOptions": {
+                  "rendering": "ui-select-extended"
+                },
+                "validators": [
+                  {
+                    "type": "date",
+                    "allowFutureDates": "false"
+                  }
+                ],
+                "id": "encDate"
+              },
+              {
+                "label": "Provider:",
+                "type": "encounterProvider",
+                "required": "true",
+                "questionOptions": {
+                  "rendering": "ui-select-extended"
+                },
+                "id": "encProvider "
+              },
+              {
+                "label": "Location:",
+                "type": "encounterLocation",
+                "required": "true",
+                "questionOptions": {
+                  "rendering": "ui-select-extended"
+                },
+                "id": "encLocation"
+              }
+            ]
+          }
+        ]
+    }
+  ],
+  "processor": "EncounterFormProcessor",
+    "referencedForms": [],
+    "encounterType": "36416b85-4e86-4b49-9ef6-113dbe69f9ad"
+}

@@ -1,0 +1,68 @@
+{
+  "resourceType": "ValueSet",
+  "id": "zarish-service-types",
+  "url": "https://fhir.zs-his.com/ValueSet/service-types",
+  "version": "1.0.0",
+  "name": "ZARISHServiceTypes",
+  "title": "ZARISH Service Types Value Set",
+  "status": "active",
+  "publisher": "ZARISH Health Tech",
+  "description": "Value set for healthcare service types in ZARISH HIS.",
+  "compose": {
+    "include": [
+      {
+        "system": "http://terminology.hl7.org/CodeSystem/service-type",
+        "concept": [
+          {
+            "code": "1",
+            "display": "General Practice"
+          },
+          {
+            "code": "2",
+            "display": "Specialist"
+          },
+          {
+            "code": "3",
+            "display": "Emergency"
+          },
+          {
+            "code": "4",
+            "display": "Inpatient"
+          },
+          {
+            "code": "5",
+            "display": "Outpatient"
+          },
+          {
+            "code": "6",
+            "display": "Diagnostic"
+          },
+          {
+            "code": "7",
+            "display": "Therapeutic"
+          },
+          {
+            "code": "8",
+            "display": "Surgical"
+          },
+          {
+            "code": "9",
+            "display": "Maternity"
+          },
+          {
+            "code": "10",
+            "display": "Pediatric"
+          },
+          {
+            "code": "11",
+            "display": "Mental Health"
+          },
+          {
+            "code": "12",
+            "display": "Rehabilitation"
+          }
+        ]
+      }
+    ]
+  }
+}

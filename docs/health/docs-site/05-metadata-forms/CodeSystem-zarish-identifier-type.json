@@ -1,0 +1,40 @@
+{
+  "resourceType": "CodeSystem",
+  "id": "zarish-identifier-type",
+  "url": "https://fhir.zs-his.com/CodeSystem/identifier-type",
+  "version": "1.0.0",
+  "name": "ZARISHIdentifierType",
+  "title": "ZARISH Identifier Type Code System",
+  "status": "active",
+  "publisher": "ZARISH Health Tech",
+  "description": "Code system for identifier types used in ZARISH HIS.",
+  "content": "complete",
+  "count": 5,
+  "concept": [
+    {
+      "code": "MRN",
+      "display": "Medical Record Number",
+      "definition": "Unique medical record number assigned by ZARISH HIS."
+    },
+    {
+      "code": "NID",
+      "display": "National ID",
+      "definition": "Bangladesh National Identity Card number."
+    },
+    {
+      "code": "BC",
+      "display": "Birth Certificate",
+      "definition": "Bangladesh Birth Registration number."
+    },
+    {
+      "code": "PASSPORT",
+      "display": "Passport Number",
+      "definition": "Bangladesh passport number for international patients."
+    },
+    {
+      "code": "HID",
+      "display": "Health ID",
+      "definition": "National Health ID number if available."
+    }
+  ]
+}

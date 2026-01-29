@@ -1,0 +1,38 @@
+extends: [[spectral:oas, all]]
+
+rules:
+  # ZARISH HIS Custom Rules
+  info-contact: error
+  info-description: error
+  info-license: error
+  operation-description: error
+  operation-operationId: error
+  operation-summary: error
+  operation-tags: error
+  operation-tag-defined: error
+  
+  # FHIR R5 Compliance
+  path-params: error
+  no-$ref-siblings: error
+  oas3-valid-media-example: warn
+  
+  # Custom ZARISH Rules
+  zarish-api-versioning:
+    description: API must include version in path
+    severity: error
+    given: $.paths[*]~
+    then:
+      function: pattern
+      functionOptions:
+        match: "^/v[0-9]+/"
+  
+  zarish-fhir-resource:
+    description: FHIR endpoints must follow R5 structure
+    severity: warn
+    given: $.paths[*]~
+    then:
+      function: pattern
+      functionOptions:
+        match: "/(Patient|Practitioner|Observation|Encounter|Medication|Appointment)"
+
+formats: [oas3, oas3.1]

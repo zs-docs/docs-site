@@ -1,0 +1,65 @@
+{
+    "name": "Postnatal Care (PNC) Enrollment Form",
+    "description": "PNC Mother Enrollment Encounter",
+    "version": "1.0",
+    "published": true,
+    "uuid": "286598d5-1886-4f0d-9e5f-fa5473399cee",
+    "retired": false,
+    "encounter": "MCH Mother Enrollment",
+    "meta": {
+      "programs": {
+        "uuid": "286598d5-1886-4f0d-9e5f-fa5473399cee",
+        "isEnrollment": true,
+        "discontinuationDateQuestionId": ""
+      }
+    },
+    "pages": [
+        {
+        "label": "Postnatal Care Enrollment",
+        "sections": [
+          {
+            "label": "Visit Details",
+            "isExpanded": "true",
+            "questions": [
+              {
+                "label": "Date:",
+                "type": "encounterDatetime",
+                "required": "true",
+                "questionOptions": {
+                  "rendering": "ui-select-extended"
+                },
+                "validators": [
+                  {
+                    "type": "date",
+                    "allowFutureDates": "false"
+                  }
+                ],
+                "id": "encDate"
+              },
+              {
+                "label": "Provider:",
+                "type": "encounterProvider",
+                "required": "true",
+                "questionOptions": {
+                  "rendering": "ui-select-extended"
+                },
+                "id": "encProvider "
+              },
+              {
+                "label": "Location:",
+                "type": "encounterLocation",
+                "required": "true",
+                "questionOptions": {
+                  "rendering": "ui-select-extended"
+                },
+                "id": "encLocation"
+              }
+            ]
+          }
+        ]
+    }
+  ],
+  "processor": "EncounterFormProcessor",
+    "referencedForms": [],
+    "encounterType": "9ac87837-f890-483f-a17a-54d2e128487f"
+}

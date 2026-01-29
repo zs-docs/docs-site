@@ -1,0 +1,145 @@
+{
+  "name": "zs-his-core",
+  "version": "1.0.0",
+  "description": "ZARISH Hospital Information System - FHIR R5 Core Implementation Guide",
+  "main": "index.js",
+  "scripts": {
+    "build": "go run cmd/igpublisher/main.go build --source . --output ./output/fhir-ig",
+    "test": "go run cmd/igpublisher/main.go validate --resource ./examples/patient-example.json",
+    "lint": "markdownlint *.md",
+    "validate": "go run cmd/igpublisher/main.go validate --source .",
+    "package": "go run cmd/igpublisher/main.go package --source .",
+    "dev": "go run cmd/igpublisher/main.go build --source . --output ./output/dev && go run cmd/igpublisher/main.go serve --output ./output/dev"
+  },
+  "keywords": [
+    "FHIR",
+    "R5",
+    "Healthcare",
+    "Hospital Information System",
+    "Bangladesh",
+    "ZARISH"
+  ],
+  "author": {
+    "name": "ZARISH Health Tech Team",
+    "email": "fhir-team@zs-his.com",
+    "url": "https://zs-his.com"
+  },
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/zs-his/docs.git"
+  },
+  "dependencies": {
+    "hl7.fhir.r5.core": "5.0.0",
+    "hl7.fhir.us.core": "6.1.0"
+  },
+  "fhir": {
+    "version": "5.0.0",
+    "ig": {
+      "id": "zs-his",
+      "url": "https://zs-his.com/fhir/ImplementationGuide/zs-his",
+      "name": "ZARISH Hospital Information System",
+      "status": "active",
+      "experimental": false,
+      "publisher": {
+        "name": "ZARISH Health Tech",
+        "url": "https://zs-his.com"
+      },
+      "contact": [
+        {
+          "name": "FHIR Implementation Team",
+          "telecom": [
+            {
+              "system": "email",
+              "value": "fhir-team@zs-his.com"
+            }
+          ]
+        }
+      ],
+      "description": "FHIR R5 Implementation Guide for ZARISH Hospital Information System, aligned with Bangladesh national healthcare standards and HIPAA compliance requirements.",
+      "jurisdiction": [
+        {
+          "coding": [
+            {
+              "system": "urn:iso:std:iso:3166",
+              "code": "BD",
+              "display": "Bangladesh"
+            }
+          ]
+        }
+      ],
+      "packageId": "zs-his",
+      "license": "MIT",
+      "fhirVersion": [
+        "5.0.0"
+      ],
+      "dependsOn": [
+        {
+          "id": "hl7.fhir.r5.core",
+          "uri": "http://hl7.org/fhir/R5",
+          "packageId": "hl7.fhir.r5.core",
+          "version": "5.0.0"
+        },
+        {
+          "id": "hl7.fhir.us.core",
+          "uri": "http://hl7.org/fhir/us/core",
+          "packageId": "hl7.fhir.us.core", 
+          "version": "6.1.0"
+        },
+        {
+          "id": "bd.fhir.core",
+          "uri": "https://fhir.dghs.gov.bd/ImplementationGuide/bd.fhir.core",
+          "packageId": "bd.fhir.core",
+          "version": "1.0.0"
+        }
+      ],
+      "definition": {
+        "resource": [
+          {
+            "reference": {
+              "reference": "StructureDefinition/zarish-patient"
+            }
+          },
+          {
+            "reference": {
+              "reference": "StructureDefinition/zarish-encounter"
+            }
+          },
+          {
+            "reference": {
+              "reference": "StructureDefinition/zarish-observation"
+            }
+          },
+          {
+            "reference": {
+              "reference": "StructureDefinition/zarish-medication-request"
+            }
+          }
+        ],
+        "page": {
+          "nameUrl": "toc.html",
+          "title": "Table of Contents",
+          "generation": "html"
+        },
+        "parameter": [
+          {
+            "code": "copyrightyear",
+            "value": "2026+"
+          },
+          {
+            "code": "releaselabel",
+            "value": "CI Build"
+          },
+          {
+            "code": "autoload-resources",
+            "value": "true"
+          }
+        ]
+      }
+    }
+  },
+  "homepage": "https://zs-his.com/fhir",
+  "bugs": {
+    "url": "https://github.com/zs-his/docs/issues"
+  }
+}

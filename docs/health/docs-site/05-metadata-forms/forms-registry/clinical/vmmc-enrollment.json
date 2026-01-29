@@ -1,0 +1,64 @@
+{
+  "name": "VMMC Enrollment Form",
+  "description": "VMMC Enrollment Form",
+  "version": "1",
+  "published": true,
+  "uuid": "a74e3e4a-9e2a-41fb-8e64-4ba8a71ff984",
+  "retired": false,
+  "encounter": "VMMC Enrollment",
+	"meta": {
+		"programs": {
+		  "uuid": "228538f4-cad9-476b-84c3-ab0086150bcc",
+		  "isEnrollment": true,
+		  "discontinuationDateQuestionId": ""
+		}
+	},
+  "pages": [
+    {
+      "label": "VMMC Enrollment Form",
+      "sections": [
+        {
+          "label": "Visit Details",
+          "isExpanded": "true",
+          "questions": [
+            {
+              "label": "Encounter Date:",
+              "type": "encounterDatetime",
+              "required": "true",
+              "questionOptions": {
+                "rendering": "ui-select-extended"
+              },
+              "validators": [
+                {
+                  "type": "date",
+                  "allowFutureDates": "false"
+                }
+              ],
+              "id": "encDate"
+            },
+            {
+              "label": "VMMC Enrollment Provider:",
+              "type": "encounterProvider",
+              "required": "true",
+              "questionOptions": {
+                "rendering": "ui-select-extended"
+              },
+              "id": "encProvider "
+            },
+            {
+              "label": "Location:",
+              "type": "encounterLocation",
+              "required": "true",
+              "questionOptions": {
+                "rendering": "ui-select-extended"
+              },
+              "id": "encLocation"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "processor": "EncounterFormProcessor",
+  "referencedForms": []
+}

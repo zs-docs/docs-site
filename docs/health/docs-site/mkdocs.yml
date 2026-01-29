@@ -1,0 +1,80 @@
+site_name: ZARISH Health Information System
+site_url: https://zs-his.github.io/docs/
+repo_url: https://github.com/zs-his/docs
+repo_name: zs-his/docs
+
+theme:
+  name: material
+  palette:
+    - scheme: default
+      primary: blue
+      accent: cyan
+      toggle:
+        icon: material/brightness-7
+        name: Switch to dark mode
+    - scheme: slate
+      primary: indigo
+      accent: teal
+      toggle:
+        icon: material/brightness-4
+        name: Switch to light mode
+  
+  features:
+    - navigation.tabs
+    - navigation.sections
+    - navigation.expand
+    - navigation.top
+    - navigation.tracking
+    - search.suggest
+    - search.highlight
+    - content.code.copy
+    - content.action.edit
+    - content.action.view
+
+plugins:
+  - search
+  - git-revision-date-localized:
+      enable_creation_date: true
+
+markdown_extensions:
+  - pymdownx.highlight
+  - pymdownx.superfences:
+      custom_fences:
+        - name: mermaid
+          class: mermaid
+          format: !!python/name:pymdownx.superfences.fence_code_format
+  - admonition
+  - pymdownx.details
+  - tables
+  - attr_list
+
+nav:
+  - Home: README.md
+  - Getting Started:
+      - Setup Guide: SETUP-GUIDE.md
+      - TODO: TODO.md
+  
+  - Documentation:
+      - Overview: docs/README.md
+      - Getting Started: docs/getting-started/
+      - Architecture: docs/architecture/
+      - Backend: docs/backend/
+      - Frontend: docs/frontend/
+      - FHIR: docs/fhir/
+      - API: docs/api/
+      - Infrastructure: docs/infrastructure/
+      - Deployment: docs/deployment/
+  
+  - Standards:
+      - API Naming: 01-standards/api-naming-standards.md
+      - API Standards Validation: API-STANDARDS-VALIDATIO*.md
+  
+  - Monitoring & Events:
+      - Event Flow Diagram: EVENT-FLOW-DIAGRAM.md
+      - Event Monitoring: EVENT-MONITORING.md
+      - Compliance Metrics: COMPLIANCE-METRICS.md
+      - Workflow Status: WORKFLOW-STATUS.md
+  
+  - Repository Info:
+      - Repository Info: REPOSITORY-IN*.md
+      - Workflow README: README-WORKFLOW.md

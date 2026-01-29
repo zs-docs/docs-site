@@ -1,0 +1,58 @@
+{
+  "name": "TB Enrollment",
+  "description": "TB Enrollment",
+  "version": "1",
+  "published": true,
+  "uuid": "89994550-9939-40f3-afa6-173bce445c79",
+  "retired": false,
+  "encounter": "TB Enrollment",
+	"meta": {
+		"programs": {
+			"uuid": "9f144a34-3a4a-44a9-8486-6b7af6cc64f6",
+			"isEnrollment": true,
+			"discontinuationDateQuestionId": ""
+		}
+  },
+  "pages": [
+    {
+      "label": "TB Enrollment Form",
+      "sections": [
+        {
+          "label": "Visit details",
+          "isExpanded": "true",
+          "questions": [
+            {
+              "label": "Date:",
+              "type": "encounterDatetime",
+              "required": "true",
+              "questionOptions": {
+                "rendering": "ui-select-extended"
+              },
+              "id": "encDate"
+            },
+            {
+              "label": "Provider:",
+              "type": "encounterProvider",
+              "required": "true",
+              "questionOptions": {
+                "rendering": "ui-select-extended"
+              },
+              "id": "encProvider "
+            },
+            {
+              "label": "Location:",
+              "type": "encounterLocation",
+              "required": "true",
+              "questionOptions": {
+                "rendering": "ui-select-extended"
+              },
+              "id": "encLocation"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "processor": "EncounterFormProcessor",
+  "referencedForms": []
+}

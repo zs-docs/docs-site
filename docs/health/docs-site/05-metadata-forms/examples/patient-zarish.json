@@ -1,0 +1,69 @@
+{
+  "resourceType": "Patient",
+  "id": "patient-zarish-001",
+  "identifier": [
+    {
+      "type": {
+        "coding": [
+          {
+            "system": "https://fhir.zs-his.com/CodeSystem/identifier-type",
+            "code": "MRN",
+            "display": "Medical Record Number"
+          }
+        ]
+      },
+      "system": "https://fhir.zs-his.com/identifier/mrn",
+      "value": "ZARISH2026001"
+    },
+    {
+      "type": {
+        "coding": [
+          {
+            "system": "http://terminology.hl7.org/CodeSystem/v2-0203",
+            "code": "NN",
+            "display": "National Unique Individual ID"
+          }
+        ]
+      },
+      "system": "https://nid.gov.bd",
+      "value": "199512345678901"
+    }
+  ],
+  "name": [
+    {
+      "use": "official",
+      "family": "Rahman",
+      "given": [
+        "Mohammed",
+        "Abdul"
+      ],
+      "prefix": [
+        "Dr."
+      ]
+    }
+  ],
+  "gender": "male",
+  "birthDate": "1980-05-15",
+  "address": [
+    {
+      "use": "home",
+      "type": "both",
+      "line": [
+        "123 Medical College Road",
+        "Dhanmondi"
+      ],
+      "city": "Dhaka",
+      "district": "Dhaka",
+      "state": "Dhaka Division",
+      "postalCode": "1209",
+      "country": "BD"
+    }
+  ],
+  "extension": [
+    {
+      "url": "https://fhir.zs-his.com/StructureDefinition/patient-nationality",
+      "valueCode": "BD"
+    }
+  ],
+  "active": true
+}

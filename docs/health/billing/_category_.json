@@ -1,0 +1,8 @@
+{
+  "label": "Billing",
+  "position": 4,
+  "link": {
+    "type": "generated-index",
+    "description": "Billing and Financial Management module documentation"
+  }
+}

@@ -1,0 +1,29 @@
+{
+  "AI Document Generator": {
+    "prefix": "aidoc",
+    "body": [
+      "<!-- @ai-generate: $1 -->",
+      "$0"
+    ],
+    "description": "Mark section for AI generation"
+  },
+  "FHIR Profile Template": {
+    "prefix": "fhirprofile",
+    "body": [
+      "# $1 Profile",
+      "",
+      "**FHIR Resource**: $1",
+      "**Profile URL**: `https://zarish.health/fhir/StructureDefinition/zarish-$2`",
+      "",
+      "## Overview",
+      "$0",
+      "",
+      "## Elements",
+      "",
+      "| Element | Type | Cardinality | Description |",
+      "|---------|------|-------------|-------------|",
+      "| | | | |"
+    ],
+    "description": "FHIR profile documentation template"
+  }
+}

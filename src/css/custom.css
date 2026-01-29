@@ -1,0 +1,561 @@
+/**
+ * ZARISH SPHERE Custom CSS
+ * Professional healthcare platform branding and styling
+ * Version: 2.0.0
+ */
+
+/* ===== ZARISH SPHERE BRAND COLORS ===== */
+:root {
+  /* Primary Healthcare Blue */
+  --ifm-color-primary: #1e40af;
+  --ifm-color-primary-dark: #1e3a8a;
+  --ifm-color-primary-darker: #1e2f6b;
+  --ifm-color-primary-darkest: #1e244d;
+  --ifm-color-primary-light: #2563eb;
+  --ifm-color-primary-lighter: #3b82f6;
+  --ifm-color-primary-lightest: #60a5fa;
+
+  /* Secondary Purple */
+  --ifm-color-secondary: #7c3aed;
+  --ifm-color-secondary-dark: #6d28d9;
+  --ifm-color-secondary-darker: #5b21b6;
+  --ifm-color-secondary-darkest: #4c1d95;
+  --ifm-color-secondary-light: #8b5cf6;
+  --ifm-color-secondary-lighter: #a78bfa;
+  --ifm-color-secondary-lightest: #c4b5fd;
+
+  /* Healthcare Success Green */
+  --ifm-color-success: #16a34a;
+  --ifm-color-success-dark: #15803d;
+  --ifm-color-success-darker: #166534;
+  --ifm-color-success-darkest: #14532d;
+  --ifm-color-success-light: #22c55e;
+  --ifm-color-success-lighter: #4ade80;
+  --ifm-color-success-lightest: #86efac;
+
+  /* Warning Amber */
+  --ifm-color-warning: #f59e0b;
+  --ifm-color-warning-dark: #d97706;
+  --ifm-color-warning-darker: #b45309;
+  --ifm-color-warning-darkest: #92400e;
+  --ifm-color-warning-light: #fbbf24;
+  --ifm-color-warning-lighter: #fcd34d;
+  --ifm-color-warning-lightest: #fde68a;
+
+  /* Danger Red */
+  --ifm-color-danger: #dc2626;
+  --ifm-color-danger-dark: #b91c1c;
+  --ifm-color-danger-darker: #991b1b;
+  --ifm-color-danger-darkest: #7f1d1d;
+  --ifm-color-danger-light: #ef4444;
+  --ifm-color-danger-lighter: #f87171;
+  --ifm-color-danger-lightest: #fca5a5;
+
+  /* Info Sky Blue */
+  --ifm-color-info: #0ea5e9;
+  --ifm-color-info-dark: #0284c7;
+  --ifm-color-info-darker: #0369a1;
+  --ifm-color-info-darkest: #075985;
+  --ifm-color-info-light: #38bdf8;
+  --ifm-color-info-lighter: #7dd3fc;
+  --ifm-color-info-lightest: #bae6fd;
+
+  /* Custom Zarish Colors */
+  --zarish-primary: #1e40af;
+  --zarish-secondary: #7c3aed;
+  --zarish-accent: #dc2626;
+  --zarish-success: #16a34a;
+  --zarish-warning: #f59e0b;
+  --zarish-info: #0ea5e9;
+  --zarish-dark: #1f2937;
+  --zarish-light: #f3f4f6;
+  --zarish-gradient: linear-gradient(135deg, #1e40af 0%, #7c3aed 100%);
+
+  /* Typography */
+  --ifm-font-family-base:
+    'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+  --ifm-font-family-monospace: 'JetBrains Mono', 'Fira Code', Consolas, monospace;
+  --ifm-font-size-base: 16px;
+  --ifm-line-height-base: 1.6;
+
+  /* Code styling */
+  --ifm-code-font-size: 90%;
+  --docusaurus-highlighted-code-line-bg: rgba(30, 64, 175, 0.15);
+
+  /* Spacing */
+  --zarish-spacing-xs: 0.25rem;
+  --zarish-spacing-sm: 0.5rem;
+  --zarish-spacing-md: 1rem;
+  --zarish-spacing-lg: 1.5rem;
+  --zarish-spacing-xl: 2rem;
+  --zarish-spacing-2xl: 3rem;
+
+  /* Border radius */
+  --zarish-radius-sm: 0.25rem;
+  --zarish-radius-md: 0.5rem;
+  --zarish-radius-lg: 0.75rem;
+  --zarish-radius-xl: 1rem;
+
+  /* Shadows */
+  --zarish-shadow-sm: 0 1px 2px 0 rgba(0, 0, 0, 0.05);
+  --zarish-shadow-md: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+  --zarish-shadow-lg: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
+  --zarish-shadow-xl: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
+}
+
+/* Dark theme adjustments */
+[data-theme='dark'] {
+  --ifm-color-primary: #3b82f6;
+  --ifm-color-primary-dark: #2563eb;
+  --ifm-color-primary-darker: #1d4ed8;
+  --ifm-color-primary-darkest: #1e3a8a;
+  --ifm-color-primary-light: #60a5fa;
+  --ifm-color-primary-lighter: #93c5fd;
+  --ifm-color-primary-lightest: #dbeafe;
+
+  --docusaurus-highlighted-code-line-bg: rgba(96, 165, 250, 0.2);
+
+  /* Dark theme specific colors */
+  --zarish-dark-bg: #111827;
+  --zarish-dark-surface: #1f2937;
+  --zarish-dark-border: #374151;
+}
+
+/* ===== GLOBAL STYLES ===== */
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: var(--ifm-font-family-base);
+  line-height: var(--ifm-line-height-base);
+  color: var(--ifm-color-content);
+}
+
+/* ===== NAVBAR STYLING ===== */
+.navbar {
+  background: var(--zarish-gradient) !important;
+  border-bottom: 2px solid var(--zarish-primary);
+  box-shadow: var(--zarish-shadow-md);
+}
+
+.navbar__title {
+  font-weight: 700;
+  font-size: 1.25rem;
+  color: white !important;
+}
+
+.navbar__link {
+  color: rgba(255, 255, 255, 0.9) !important;
+  font-weight: 500;
+  transition: all 0.2s ease;
+}
+
+.navbar__link:hover {
+  color: white !important;
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: var(--zarish-radius-md);
+}
+
+.navbar__link--active {
+  color: white !important;
+  background: rgba(255, 255, 255, 0.15);
+  border-radius: var(--zarish-radius-md);
+}
+
+/* ===== FOOTER STYLING ===== */
+.footer {
+  background: var(--zarish-dark) !important;
+  border-top: 3px solid var(--zarish-primary);
+}
+
+.footer__title {
+  color: var(--zarish-primary) !important;
+  font-weight: 600;
+}
+
+.footer__link-item {
+  color: var(--zarish-light) !important;
+  transition: color 0.2s ease;
+}
+
+.footer__link-item:hover {
+  color: var(--zarish-primary) !important;
+}
+
+/* ===== SIDEBAR STYLING ===== */
+.theme-doc-sidebar-container {
+  border-right: 2px solid var(--ifm-color-emphasis-200);
+}
+
+.theme-doc-sidebar-item-link {
+  border-radius: var(--zarish-radius-md);
+  margin: 2px 4px;
+  transition: all 0.2s ease;
+}
+
+.theme-doc-sidebar-item-link:hover {
+  background: var(--ifm-color-emphasis-100);
+  transform: translateX(2px);
+}
+
+.theme-doc-sidebar-item-link.theme-doc-sidebar-item-link-active {
+  background: var(--zarish-primary);
+  color: white;
+  font-weight: 600;
+}
+
+/* ===== CONTENT STYLING ===== */
+.markdown {
+  max-width: none;
+}
+
+.markdown h1 {
+  color: var(--zarish-primary);
+  border-bottom: 3px solid var(--zarish-primary);
+  padding-bottom: var(--zarish-spacing-md);
+  font-weight: 700;
+}
+
+.markdown h2 {
+  color: var(--zarish-secondary);
+  border-bottom: 2px solid var(--zarish-secondary);
+  padding-bottom: var(--zarish-spacing-sm);
+  font-weight: 600;
+}
+
+.markdown h3 {
+  color: var(--zarish-dark);
+  font-weight: 600;
+}
+
+.markdown h4,
+.markdown h5,
+.markdown h6 {
+  color: var(--zarish-dark);
+  font-weight: 600;
+}
+
+/* ===== TABLE STYLING ===== */
+.markdown table {
+  border: 2px solid var(--zarish-primary);
+  border-radius: var(--zarish-radius-lg);
+  overflow: hidden;
+  box-shadow: var(--zarish-shadow-md);
+}
+
+.markdown th {
+  background: var(--zarish-gradient);
+  color: white;
+  font-weight: 600;
+  padding: var(--zarish-spacing-md);
+}
+
+.markdown td {
+  padding: var(--zarish-spacing-sm) var(--zarish-spacing-md);
+  border: 1px solid var(--ifm-color-emphasis-200);
+}
+
+.markdown tr:nth-child(even) {
+  background: var(--ifm-color-emphasis-100);
+}
+
+.markdown tr:hover {
+  background: var(--ifm-color-emphasis-200);
+}
+
+/* ===== CODE BLOCKS ===== */
+.theme-code-block {
+  border-radius: var(--zarish-radius-lg);
+  box-shadow: var(--zarish-shadow-md);
+  border: 2px solid var(--zarish-primary);
+}
+
+.prism-code {
+  background: var(--zarish-dark) !important;
+  color: var(--zarish-light) !important;
+}
+
+/* ===== ALERTS AND NOTICES ===== */
+.admonition {
+  border-radius: var(--zarish-radius-lg);
+  border-left: 4px solid;
+  box-shadow: var(--zarish-shadow-sm);
+}
+
+.admonition.note {
+  border-left-color: var(--zarish-info);
+  background: rgba(14, 165, 233, 0.1);
+}
+
+.admonition.tip {
+  border-left-color: var(--zarish-success);
+  background: rgba(22, 163, 74, 0.1);
+}
+
+.admonition.warning {
+  border-left-color: var(--zarish-warning);
+  background: rgba(245, 158, 11, 0.1);
+}
+
+.admonition.danger {
+  border-left-color: var(--zarish-accent);
+  background: rgba(220, 38, 38, 0.1);
+}
+
+/* ===== BUTTONS ===== */
+.button {
+  background: var(--zarish-gradient);
+  color: white;
+  border: none;
+  border-radius: var(--zarish-radius-md);
+  padding: var(--zarish-spacing-sm) var(--zarish-spacing-lg);
+  font-weight: 600;
+  transition: all 0.2s ease;
+  box-shadow: var(--zarish-shadow-sm);
+}
+
+.button:hover {
+  transform: translateY(-1px);
+  box-shadow: var(--zarish-shadow-lg);
+}
+
+.button.button--secondary {
+  background: var(--zarish-secondary);
+}
+
+.button.button--success {
+  background: var(--zarish-success);
+}
+
+.button.button--warning {
+  background: var(--zarish-warning);
+}
+
+.button.button--danger {
+  background: var(--zarish-accent);
+}
+
+/* ===== CARDS AND CONTAINERS ===== */
+.zarish-card {
+  background: white;
+  border: 2px solid var(--zarish-primary);
+  border-radius: var(--zarish-radius-lg);
+  padding: var(--zarish-spacing-lg);
+  box-shadow: var(--zarish-shadow-md);
+  transition: all 0.2s ease;
+}
+
+.zarish-card:hover {
+  transform: translateY(-2px);
+  box-shadow: var(--zarish-shadow-xl);
+}
+
+[data-theme='dark'] .zarish-card {
+  background: var(--zarish-dark-surface);
+  border-color: var(--zarish-primary);
+}
+
+/* ===== HEALTH MODULE SPECIFIC STYLING ===== */
+.health-module-header {
+  background: var(--zarish-gradient);
+  color: white;
+  padding: var(--zarish-spacing-xl);
+  border-radius: var(--zarish-radius-lg);
+  margin-bottom: var(--zarish-spacing-lg);
+  text-align: center;
+}
+
+.health-module-icon {
+  width: 64px;
+  height: 64px;
+  background: white;
+  border-radius: 50%;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: var(--zarish-spacing-md);
+  font-size: 2rem;
+}
+
+.health-module-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: var(--zarish-spacing-lg);
+  margin: var(--zarish-spacing-lg) 0;
+}
+
+.health-feature-card {
+  background: var(--ifm-color-emphasis-100);
+  border: 1px solid var(--ifm-color-emphasis-200);
+  border-radius: var(--zarish-radius-md);
+  padding: var(--zarish-spacing-lg);
+  transition: all 0.2s ease;
+}
+
+.health-feature-card:hover {
+  border-color: var(--zarish-primary);
+  box-shadow: var(--zarish-shadow-md);
+}
+
+/* ===== PROGRESS BARS ===== */
+.zarish-progress {
+  width: 100%;
+  height: 8px;
+  background: var(--ifm-color-emphasis-200);
+  border-radius: var(--zarish-radius-sm);
+  overflow: hidden;
+}
+
+.zarish-progress-bar {
+  height: 100%;
+  background: var(--zarish-gradient);
+  transition: width 0.3s ease;
+}
+
+/* ===== BADGES ===== */
+.zarish-badge {
+  display: inline-block;
+  padding: var(--zarish-spacing-xs) var(--zarish-spacing-sm);
+  border-radius: var(--zarish-radius-sm);
+  font-size: 0.75rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+}
+
+.zarish-badge.primary {
+  background: var(--zarish-primary);
+  color: white;
+}
+
+.zarish-badge.secondary {
+  background: var(--zarish-secondary);
+  color: white;
+}
+
+.zarish-badge.success {
+  background: var(--zarish-success);
+  color: white;
+}
+
+.zarish-badge.warning {
+  background: var(--zarish-warning);
+  color: white;
+}
+
+.zarish-badge.danger {
+  background: var(--zarish-accent);
+  color: white;
+}
+
+/* ===== RESPONSIVE DESIGN ===== */
+@media (max-width: 768px) {
+  .health-module-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .navbar__title {
+    font-size: 1rem;
+  }
+
+  .markdown h1 {
+    font-size: 1.75rem;
+  }
+
+  .markdown h2 {
+    font-size: 1.5rem;
+  }
+}
+
+/* ===== ANIMATIONS ===== */
+@keyframes zarish-fade-in {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.zarish-animate-fade-in {
+  animation: zarish-fade-in 0.5s ease-out;
+}
+
+@keyframes zarish-pulse {
+  0%,
+  100% {
+    opacity: 1;
+  }
+
+  50% {
+    opacity: 0.7;
+  }
+}
+
+.zarish-animate-pulse {
+  animation: zarish-pulse 2s infinite;
+}
+
+/* ===== PRINT STYLES ===== */
+@media print {
+  .navbar,
+  .footer {
+    display: none;
+  }
+
+  .markdown {
+    max-width: 100%;
+  }
+
+  .zarish-card {
+    break-inside: avoid;
+  }
+}
+
+/* ===== ACCESSIBILITY ===== */
+@media (prefers-reduced-motion: reduce) {
+  * {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+  }
+}
+
+/* ===== FOCUS STYLES ===== */
+.button:focus,
+.navbar__link:focus,
+.theme-doc-sidebar-item-link:focus {
+  outline: 2px solid var(--zarish-primary);
+  outline-offset: 2px;
+}
+
+/* ===== LOADING STATES ===== */
+.zarish-loading {
+  position: relative;
+  overflow: hidden;
+}
+
+.zarish-loading::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: -100%;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.2), transparent);
+  animation: zarish-loading 1.5s infinite;
+}
+
+@keyframes zarish-loading {
+  0% {
+    left: -100%;
+  }
+
+  100% {
+    left: 100%;
+  }
+}

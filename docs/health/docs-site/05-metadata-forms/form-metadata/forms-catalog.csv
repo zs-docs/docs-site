@@ -1,0 +1,196 @@
+Form ID,Form Name,Form UUID,Encounter Type,Category,Status,Source File,Description,Version,Published,Retired
+form-001,Adverse Drug Reaction Reporting Form,461e1b45-b3f2-4899-b3e9-d3b110b6ed9c,Adverse Drug Reaction,Mental Health & Substance Use,Active,adverse-drug-reaction-form.json,Adverse Drug Reaction Reporting Form,1,True,False
+form-002,AEFI Investigation Form,901e5166-0724-4a87-a8a0-60f44d5b92e7,AEFI Investigation,General Clinical,Active,aefi-investigation-form.json,Form to capture Adverse Events Following Immunization,1,True,False
+form-003,Alcohol Abuse Screening Tool(AUDIT),7ba743c8-d8e6-44ad-aeed-8d2ff9e985db,KP Alcohol screening,Mental Health & Substance Use,Active,alcohol-abuse-screening-tool-audit.json,Alcohol Abuse Screening Tool(AUDIT),1,True,False
+form-004,Alcohol and Drug Abuse Screening(CAGE-AID/CRAFFT),7b1ec2d5-a4ad-4ffc-a0d3-ff1ea68e293c,Alcohol and Drug Abuse Screening,Mental Health & Substance Use,Active,alcohol-and-drug-abuse-screening-cage-aid-crafft.json,Alcohol and Drug Abuse Screening(CAGE-AID/CRAFFT),1,True,False
+form-005,Antenatal Care (ANC) Discontinuation,38885518-c71a-4661-8edf-3db67707e1d1,MCH Mother Discontinuation,Maternal & Child Health,Active,anc-discontinuation-form.json,ANC Services Discontinuation,1.0,True,False
+form-006,Antenatal Care (ANC) Enrollment Form,b287050b-f9a5-4929-96b0-31ac602384e1,MCH Mother Enrollment,Maternal & Child Health,Active,anc-enrollment-form.json,ANC Mother Enrollment Encounter,1.0,True,False
+form-007,ANC Follow Up form,6fb1a39b-0a57-4239-afd7-a5490d281cb9,MCH Mother Consultation,Maternal & Child Health,Active,anc-follow-up-form.json,A form to collect ANC follow up data.,1.0,True,False
+form-008,ART Fast Track,83fb6ab2-faec-4d87-a714-93e77a28a201,ART Refill,HIV Care,Active,art-fast-track.json,ART Fast Track,2.0,True,False
+form-009,ART Preparation,782a4263-3ac9-4ce8-b316-534571233f12,ART Preparation,HIV Care,Active,art-preparation.json,ART Preparation,2.0,True,False
+form-010,Audiology Clinic Form,d9f74419-e179-426e-9aff-ec97f334a075,Audiology,General Clinical,Active,audiology-clinical-consultation-form.json,ENT Speciality Clinic Form,2.0,True,False
+form-011,Body Disposal Form,9ea9a10f-6833-4811-9bef-a79094d6bc61,Morgue,General Clinical,Active,body-disposal-form.json,Create a body disposal request for a mortuary,1.0.0,True,False
+form-012,Cancer Screening and Early diagnosis,be5c5602-0a1d-11eb-9e20-37d2e56925ee,Oncology screening,Maternal & Child Health,Active,cancer-screening-and-early-diagnosis.json,Form Cancer Screening and early diagnosis,2.0,True,False
+form-013,Cardex Nursing Plan,1f81d5e2-3569-40cf-bbb9-361a53ba409b,Nursing Cardex,General Clinical,Active,cardex-nursing-plan.json,Cardex Nursing Plan Form,2,True,False
+form-014,Cardiology  Clinical Form,998be6de-bd13-4136-ba0d-3f772139895f,Consultation,Non-Communicable Diseases,Active,cardiology-clinical-form.json,A form used to capture cardiology clinical Cases,2.0,True,False
+form-015,CCC Defaulter Tracing,a1a62d1e-2def-11e9-b210-d663bd873d93,CCC Defaulter Tracing,HIV Care,Active,ccc-defaulter-tracing.json,CCC Defaulter Tracing,1,True,False
+form-016,Cervical Cancer Assessment Form,48f2235ca-cc77-49cb-83e6-f526d5a5f174,Cervical cancer screening,Maternal & Child Health,Active,cervical-cancer-assessment.json,Cervical Cancer Assessment Form,1,True,False
+form-017,Cervical Cancer Screening Form,0c93b93c-bfef-4d2a-9fbe-16b59ee366e7,Cervical cancer screening,Maternal & Child Health,Active,cervical-cancer-screening.json,Cervical Cancer Screening Form,1,True,False
+form-018,Child HEI outcomes,d823f1ef-0973-44ee-b113-7090dc23257b,MCH Child HEI Exit,Maternal & Child Health,Active,child-hei-outcomes.json,Child HEI outcomes,1,True,False
+form-019,Child Welfare Services Discontinuation,1dd02c43-904b-4206-8378-7b1a8414c326,MCH Child Discontinuation,General Clinical,Active,child-welfare-services-discontinuation.json,Child Welfare Services Discontinuation,2.0,True,False
+form-020,Clinical Encounter,e958f902-64df-4819-afd4-7fb061f59308,Consultation,General Clinical,Active,clinical-encounter.json,Clinical Encounter,2.1,True,False
+form-021,CPM Discontinuation Form,d1e7ebb4-afc0-412b-a98b-6720ab1169cc,CPM Discontinuation Encounter,General Clinical,Active,communitypharmacydiscontinuation.json,Community Pharmacy Model Discontinuation  Form,1,True,False
+form-022,CPM Enrollment Form,f01c67f7-2293-4a6a-b0f6-5db0fb5934dd,CPM Enrollment Encounter,General Clinical,Active,communitypharmacyenrollment.json,Community Pharmacy Model Enrollment form,1.1,True,False
+form-023,CPM Initial Form,bf55e6ad-096d-4223-a2bb-2aa3e3495af2,CPM Enrollment Encounter,General Clinical,Active,communitypharmacyinitial.json,Community Pharmacy Model Initial form,1.1,True,False
+form-024,CPM Referral Form,b1e1f6fe-1894-4d06-bd8c-2b87f7cd9577,CPM Referral Encounter,General Clinical,Active,communitypharmacyreferral.json,Community Pharmacy Model Referral form,1,True,False
+form-025,Community Pharmacy Screening Form,f7dbe6b6-2a5a-46e6-af52-45bf2962f4aa,CPM Screening Encounter,Laboratory & Diagnostics,Active,communitypharmacyscreeningform.json,ROC Screening Tool Community Pharmacy Form,2.0,True,False
+form-026,COVID-19 Assessment form,86709f36-1490-11ec-82a8-0242ac130003,COVID-19 Assessment Encounter,General Clinical,Active,covid19-assessment.json,POC Cancer Screening Form,2,True,False
+form-027,Cross Border Referral ,01839000-c275-11ed-9fc5-0b220ae9bf59,Cross Border Referral,General Clinical,Active,cross-border-referral.json,Cross border referral,1.0,True,False
+form-028,Cross Border Screening,099d5e12-18fc-11eb-86f3-231df7469c4e,Cross Border Screening,Laboratory & Diagnostics,Active,cross-border-screening.json,Cross Border Screening,1.0,True,False
+form-029,Child Welfare Clinic Form,755b59e6-acbb-4853-abaf-be302039f902,CWC Consultation,General Clinical,Active,cwc-follow-up.json,Child welfare clinic form,3,True,False
+form-030,Delivery,496c7cc3-0eea-4e84-a04c-2292949e2f7f,MCH Mother Consultation,Maternal & Child Health,Active,delivery.json,Delivery,2.0,True,False
+form-031,Dental Clinical Form,a3c01460-c346-4f3d-a627-5c7de9494ba0,Consultation,General Clinical,Active,dental-clinical-form.json,A form used to capture dental clinical Cases,2.0,True,False
+form-032,Depression Screening PHQ-9,5fe533ee-0c40-4a1f-a071-dc4d0fbb0c17,KP Depression screening,Mental Health & Substance Use,Active,depression-screening-phq-9.json,Depression Screening PHQ-9,2.0,True,False
+form-033,Dermatology Clinical Form,efa2f992-44af-487e-aaa7-c92813a34612,Dermatology Clinic,Mental Health & Substance Use,Active,dermatology-clinical-encounter.json,A form used to capture dermatology clinical Cases,2.0,True,False
+form-034,Diabetic Clinical Encounter,9f6543e4-0821-4f9c-9264-94e45dc35e17,Diabetic Clinic,Non-Communicable Diseases,Active,diabetic-clinical-encounter-form.json,A form for collecting diabetic information,2.0,True,False
+form-035,Discharge,af273344-a5f9-11e8-98d0-529269fb1459,MCH Mother Consultation,Emergency & Critical Care,Active,discharge.json,Discharge,1,True,False
+form-036,Doctor's Note Form,87379b0a-738b-4799-9736-cdac614cee2a,Doctor's Note,General Clinical,Active,doctor-s-note.json,Doctor's Note Form,1,True,False
+form-037,"Ear, Nose, and Throat (ENT)",c5055956-c3bb-45f2-956f-82e114c57aa7,Consultation,General Clinical,Active,ear-nose-throat-ent.json,"Form for updating Ear, Nose, and Throat (ENT) diagnosis",2.0,True,False
+form-038,Enhanced Adherence Screening,c483f10f-d9ee-4b0d-9b8c-c24c1ec24701,Enhanced Adherence Screening,Maternal & Child Health,Active,enhanced-adherence-screening.json,Enhanced Adherence Screening,2.0,True,False
+form-039,Family History,xxxx,Registration,General Clinical,Active,family-history.json,Family History,1,True,False
+form-040,Family Planning Discontinuation,efc782ea-9a16-4791-824a-18be7417eda4,FP Discontinuation,General Clinical,Active,family-planning-discontinuation.json,Family Planning Services Discontinuation,1.0,True,False
+form-041,Family Planning Enrollment Form,5a07d260-77d7-477d-8ae5-f5bc2fb4a1e5,Family Planning,General Clinical,Active,family-planning-enrollment.json,Family Planning Enrollment Encounter,1.0,True,False
+form-042,Family Planning,a52c57d4-110f-4879-82ae-907b0d90add6,Family Planning,General Clinical,Active,family-planning-form.json,Family Planning Form,2.1,True,False
+form-043,Fertility Clinic Form,32e43fc9-6de3-48e3-aafe-3b92f167753d,Consultation,General Clinical,Active,fertility-clinic-form.json,A form used to capture fertility Cases,2.0,True,False
+form-044,Fluid Intake and Output Form,b4bfa7a3-f6ed-4339-a4ec-b076463c0696,Fluid Intake and Output,General Clinical,Active,fluid-intake-output.json,A form for collecting fluid intake and output data,1.0,True,False
+form-045,Gastroenterology Clinic Visit,6b4fa553-f2b3-47d0-a4c5-fc11f38b0b24,Consultation,General Clinical,Active,gastroenterology-clinic-visit.json,Gastroenterology Clinic Visit Form,2.0,True,False
+form-046,Violence Community Linkage Form,f760e38c-3d2f-4a5d-aa3d-e9682576efa8,Violence Community Linkage Encounter,Gender-Based Violence,Inactive,gbv-community-linkage-form.json,Violence Community Linkage Form,1.0,False,False
+form-047,Violence Consent Form,d720a8b3-52cc-41e2-9a75-3fd0d67744e5,Violence Consent Encounter,Gender-Based Violence,Inactive,gbv-consent-form.json,Violence  Consent Form,2.0,False,False
+form-048,Violence Discontinuation Form,8fed3d06-f8a1-4cb8-b853-cd93394bab79,Violence Discontinuation Encounter,Gender-Based Violence,Inactive,gbv-discontinuation-form.json,Violence Discontinuation,2.0,False,False
+form-049,Violence Enrollment Form,9ba1d4aa-57d7-48f9-a635-a23508e8136c,Violence Enrollment Encounter,Gender-Based Violence,Active,gbv-enrollment-form.json,Violence Enrollment Form,2,True,False
+form-050,Violence Initial Form,e182d25f-d824-4cc7-8e0c-188519c300aa,Violence Enrollment Encounter,Gender-Based Violence,Active,gbv-initial.json,Violence Initial Form,2,True,False
+form-051,Violence Legal Form,d0c36426-4503-4236-ab5d-39bff77f2b50,Violence Legal Encounter,Gender-Based Violence,Inactive,gbv-legal-encounter-form.json,Legal Encounter Form,2.0,False,False
+form-052,Violence Perpetrator Details,f37d7e0e-95e8-430d-96a3-8e22664f74d6,Violence Perpetrator Details Encounter,Gender-Based Violence,Inactive,gbv-perpetrator-details-forms.json,Violence Perpetrator Details,2.0,False,False
+form-053,Physical and Emotional Violence Form,a0943862-f0fe-483d-9f11-44f62abae063,Violence Physical and Emotional Abuse,Gender-Based Violence,Inactive,gbv-physical-and-emotional-violence.json,Physical and Emotional violence,2.0,False,False
+form-054,Violence Trauma Counselling,e983d758-5adf-4917-8172-0f4be4d8116a,Violence Trauma Counselling Encounter,Gender-Based Violence,Inactive,gbv-trauma-counselling-encounter-form.json,Violence Trauma Counselling Encounter form,2.0,False,False
+form-055,Generalized Anxiety Disorder Assessment,524d078e-936a-4543-9ca6-7a8d9ed4db06,Generalized Anxiety Disorder Assessment,Mental Health & Substance Use,Active,generalized-anxiety-disorder.json,Generalized Anxiety Disorder Assessment,1.0,True,False
+form-056,GOPC Clinical Consultation Form,35ab0825-33af-49e7-ac01-bb0b05753732,GOPC,General Clinical,Active,gopc-clinical-consultation-form.json,GOPC Speciality Clinic Form,2.1,True,False
+form-057,High IIT Intervention Form,6817d322-f938-4f38-8ccf-caa6fa7a499f,High IIT Intervention,General Clinical,Active,high-iit-intervention-form.json,A form for collecting the interventions offered to a case by a case manager.,1.0,True,False
+form-058,HIV Discontinuation,e3237ede-fa70-451f-9e6c-0908bc39f8b9,HIV Discontinuation,HIV Care,Active,hiv-discontinuation.json,HIV Discontinuation,1,True,False
+form-059,HIV Enrollment,e4b506c1-7379-42b6-a374-284469cba8da,HIV Enrollment,HIV Care,Active,hiv-enrollment.json,HIV Enrollment,1,True,False
+form-060,HIV Green Card,22c68f86-bbf0-49ba-b2d1-23fa7ccf0259,HIV Consultation,HIV Care,Active,hiv-green-card.json,HIV Green Card,2.1,True,False
+form-061,HIV Initial Form,592fd92c-35f6-4dd8-8f0d-a401c1e5b2e2,HIV Enrollment,HIV Care,Active,hiv-initial-form.json,Form filled after enrolling the patient into HIV program,1,True,False
+form-062,HIV Self Test Form,810fc592-f5f8-467a-846e-e177ba48a4e5,HIV self testing,HIV Care,Active,hiv-self-test.json,HIV Self Test Form,2.0,True,False
+form-063,Home Visit  Checklist Form,ac3152de-1728-4786-828a-7fb4db0fc384,Home Visit Checklist,General Clinical,Active,home-visit-checklist-form.json,A form used to capture home visit details,1.0,True,False
+form-064,HTS Client Referral Form,9284828e-ce55-11e9-a32f-2a2ae2dbcce4,HTS,General Clinical,Active,hts-client-referral.json,HTS Client Referral Form,1,True,False
+form-065,HTS Client Tracing Form,15ed03d2-c972-11e9-a32f-2a2ae2dbcce4,HTS,General Clinical,Active,hts-client-tracing.json,HTS Client Tracing Form,1,True,False
+form-066,HTS Eligibility Screening Form,04295648-7606-11e8-adc0-fa7ae01bbebc,HTS,Laboratory & Diagnostics,Active,hts-eligibility-screening.json,Form used to screen clients prior to HIV testing,2.2,True,False
+form-067,HTS Initial Form,402dc5d7-46da-42d4-b2be-f43ea4ad87b0,HTS,General Clinical,Active,hts-initial.json,Form for HTS testing services,2.1,True,False
+form-068,HTS Linkage Form,050a7f12-5c52-4cad-8834-863695af335d,HTS,General Clinical,Active,hts-linkage.json,HTS Linkage Form,1,True,False
+form-069,HTS Retest Form,b08471f6-0892-4bf7-ab2b-bf79797b8ea4,HTS,General Clinical,Active,hts-retest.json,Form for HTS testing services,2.2,True,False
+form-070,ILI Surveillance Form,05bcb369-5d50-4130-9a15-19c77a80314a,ILI Surveillance,Maternal & Child Health,Active,ili-surveillnce-form.json,A form used to capture ILI  Cases,1.0,True,False
+form-071,In-Patient Admission Request,0bae7646-b079-4cbb-8130-b24274fc16f7,Transfer Request,Emergency & Critical Care,Active,in-patient-admission-request-form.json,Create an admission request to an inpatient ward,1.0.0,True,False
+form-072,In-Patient Admission Form,49f3686d-b83c-4263-a5a1-89040f643a78,Transfer Request,Emergency & Critical Care,Active,in-patient-admission.json,Create an admission request to an inpatient ward,1.0.0,True,False
+form-073,Infectious Disease Clinic Form,8f2fbcca-126f-439b-95b5-bcbc62647328,Infectious Disease,General Clinical,Active,infectious-disease-clinic.json,Infectious Disease Speciality Clinic Form,1,True,False
+form-074,Initial Nursing Cardex,3efe6966-a011-4d24-aa43-d3051bfbb8e3,Nursing Cardex,General Clinical,Active,initial-nursing-cardex.json,Nursing Cardex Form Initial,3,True,False
+form-075,Inpatient Discharge Form,98a781d2-b777-4756-b4c9-c9b0deb3483c,IPD Discharge,Emergency & Critical Care,Active,inpatient-discharge-form.json,A form for collecting patient's discharge information,1.0,True,False
+form-076,IPD Procedure Form,2b9c2b94-0b03-416a-b312-eef49b42f72c,IPD Procedure,Surgical & Procedures,Active,ipd-procedure-form.json,IPD Procedure Form,1,True,False
+form-077,KVP Client Discontinuation,1f76643e-2495-11e9-ab14-d663bd873d93,KP Discontinuation,General Clinical,Active,kvp-client-discontinuation.json,KP Discontinuation,1,True,False
+form-078,KVP Clinical Encounter form,92e041ac-9686-11e9-bc42-526af7764f64,KP Clinic Visit form,General Clinical,Active,kvp-clinical-encounter.json,KVP Clinical Encounter form,2.1,True,False
+form-079,KVP Clinical Enrollment,c7f47cea-207b-11e9-ab14-d663bd873d93,KP Enrollment,General Clinical,Active,kvp-clinical-enrollment.json,KVP Clinical Enrollment,2.0,True,False
+form-080,KVP Contact Form,185dec84-df6f-4fc7-a370-15aa8be531ec,KP Contact,General Clinical,Active,kvp-contact.json,Contact form,2.0,True,False
+form-081,KVP Diagnosis,119214e8-06d6-11ea-8d71-362b9e155667,KP Diagnosis,General Clinical,Active,kvp-diagnosis.json,Form for updating diagnosis,2,True,False
+form-082,KVP HIV Treatment Verification,a70a1132-75b3-11ea-bc55-0242ac130003,KP kpTreatmentVerification,HIV Care,Active,kvp-hiv-treatment-verification.json,KP HIV Treatment Verification,1,True,False
+form-083,KVP Initial Form,ead9e306-f1e5-4ed8-aa7d-be9a55309b3c,KP Contact,General Clinical,Active,kvp-initial.json,Initial form for Key and Vulnerable Population (KVP) patients,2.0,True,False
+form-084,Laboratory Test Orders,2cdeded1-3f69-3bda-beff-1ed2ead94eaf,Lab Order,Laboratory & Diagnostics,Active,lab-order.json,Lab order entry form,1,True,False
+form-085,Laboratory Test Results,872de549-2d07-43d4-97f2-bade5ab66495,Lab Results,Laboratory & Diagnostics,Active,lab-result.json,Lab results form,1,True,False
+form-086,MAT Cessation Form,fa58cbc1-91c8-4920-813b-fde7fd69533b,MAT Cessation Encounter,Mental Health & Substance Use,Active,mat-cessation-form.json,A form used to assess eligibility for dose reduction ,1.0,True,False
+form-087,MAT Clinical Eligibility Assessment & Referral Form,7b470a63-4c20-453c-8d5d-d75a7bfb87d1,MAT Clinical eligibility assessment,Mental Health & Substance Use,Active,mat-clinical-eligibility-assessment-referral-form.json,A form used to collect data on eligibility,2.0,True,False
+form-088,MAT Clinical Encounter Form,5ed937a0-0933-41c3-b638-63d8a4779845,MAT Clinical Encounter,Mental Health & Substance Use,Active,mat-clinical-encounter-form.json,mat clinical form,1.1,True,False
+form-089,MAT Discontinuation Form,38d6e116-b96c-4916-a821-b4dc83e2041d,MAT Discontinuation Encounter,Mental Health & Substance Use,Active,mat-discontinuation-form.json,A form used to discontinue MAT therapy voluntarily,1,True,False
+form-090,MAT Initial Registration Form,9a9cadd7-fba1-4a24-94aa-43edfbecf8d9,MAT Initial registration Encounter,Mental Health & Substance Use,Active,mat-initial-registration-form.json,Initial Registration Form,1.0,True,False
+form-091,MAT Patient Treatment Form,350d93cd-66da-4b7e-ae9a-fdfdc9195add,MAT Treatment Encounter,Mental Health & Substance Use,Active,mat-patient-treatment-form.json,MAT Patient Treatment Form,2.0,True,False
+form-092,MAT Psychiatric Intake and Follow up Form,fdea46a1-9423-4ef9-b780-93b32b48a528,MAT Psychiatric intake and followup,Mental Health & Substance Use,Active,mat-psychiatric-intake-and-follow-up-form.json,A form used by MAT psychiatrist,2.0,True,False
+form-093, MAT Psycho-social Intake & Follow-up Form,cfd2109b-63b3-43de-8bb3-682e80c5a965,MAT Psychosocial intake and followup,Mental Health & Substance Use,Active,mat-psycho-social-intake-follow-up-form.json,Intake& Follow up,1.0,True,False
+form-094,MAT Psychosocial Follow Up Form,6c5be9ea-46d2-4281-af44-f2a8e2d5260c,MAT Psychosocial intake and followup,Mental Health & Substance Use,Active,mat-psychosocial-follow-up-form.json,MAT Psychosocial Follow Up Form,1.0,True,False
+form-095,MAT Transit/Referral Form,b9495048-eceb-4dd2-bfba-330dc4900ee9,MAT Transit/Referral Encounter,Mental Health & Substance Use,Active,mat-transit-referral-form.json,This is the transit Clients Mat Referral Form,2.0,True,False
+form-096,Maternity Inpatient Form,57b8bb54-321f-4b94-bba5-58850527bfd6,MCH Mother Consultation,Maternal & Child Health,Active,maternity-inpatient-form.json,A form used to capture Maternity Inpatient data,1.0,True,False
+form-097,Maxillofacial Clinical Consultation Form,b40d369c-31d0-4c1d-a80a-7e4b7f73bea0,MAXILLOFACIAL,General Clinical,Active,maxillofacial-clinical-form.json,Maxillofacial Speciality Clinic Form,2.0,True,False
+form-098,MCH Antenatal Visit,e8f98494-af35-4bb8-9fc7-c409c8fed843,MCH Mother Consultation,Maternal & Child Health,Active,mch-antenatal-form.json,MCH Antenatal Visit,3,True,False
+form-099,CWC Enrolment Form,8553d869-bdc8-4287-8505-910c7c998aff,CWC Enrollment,Maternal & Child Health,Active,mch-child-enrolment.json,MCH-CS Enrollment form,2.0,True,False
+form-100,MCH-MS Discontinuation,25935b9f-68ad-4e0c-9663-d2cacda82bbf,MCH Mother Discontinuation,Maternal & Child Health,Active,mch-ms-discontinuation.json,MCH-MS Discontinuation,2,True,False
+form-101,MCH-MS Enrollment,90a18f0c-17cd-4eec-8204-5af52e8d77cf,MCH Mother Enrollment,Maternal & Child Health,Active,mch-ms-enrollment.json,MCH-MS Enrollment,2.1,True,False
+form-102,MCH Postnatal Visit,72aa78e0-ee4b-47c3-9073-26f3b9ecc4a7,MCH Mother Consultation,Maternal & Child Health,Active,mch-postnatal-visit.json,MCH Postnatal Visit,3,True,False
+form-103,MOPC Clinical Consultation Form,00aa7662-e3fd-44a5-8f3a-f73eb7afa437,MOPC,General Clinical,Active,mopc-clinical-consultation-form.json,MOPC Speciality Clinic Form,1,True,False
+form-104,Mortality Admission Form,990437a8-8dbb-4ae1-a2b4-71df0041adfa,Morgue Admission,Emergency & Critical Care,Inactive,mortality-admission.json,A form to collect mortality records,1.0,False,False
+form-105,Mortuary Discharge Form,bd483dc1-9cd2-4f0e-a761-31a89b5f8bd0,Mortuary Discharge,Emergency & Critical Care,Inactive,mortuary-discharge-form.json, A form for collecting mortuary transfer details.,1.0,False,False
+form-106,NCD Discontinuation,63182d28-a23f-4d14-b48e-38077bbd8ed2,NCD Discontinuation,Non-Communicable Diseases,Active,ncd-discontinuation-form.json,NCD Discontinuation,1.0,True,False
+form-107,NCD Follow Up,3e1057da-f130-44d9-b2bb-53e039b953c6,NCD Followup,Non-Communicable Diseases,Active,ncd-follow-up.json,NCD Follow UP updates,1,True,False
+form-108,NCD Initial Form,c4994dd7-f2b6-4c28-bdc7-8b1d9d2a6a97,NCD Initial,Non-Communicable Diseases,Active,ncd-initial-form.json,A form to record NCD data,2.0,True,False
+form-109,Neurology Clinical Form,f97f2bf3-c26b-4adf-aacd-e09d720a14cd,Neurology clinic,General Clinical,Active,neurological-clinical-encounter-form.json,Neurological Clinical Encounter Form,2,True,False
+form-110,Newborn unit admission Form,5b0a08f5-87c1-40cc-8c09-09c33b44523d,New born admission,Maternal & Child Health,Active,newborn-admission-form.json,A form for collecting newborn admission details,1.0,True,False
+form-111,Nursing Care Plan,56b3ca43-2687-49d4-a03e-1b4329fe0f63,,General Clinical,Inactive,nursing-care-plan.json,A form to collect services offered by nurse at the Inpatient wards.,1.0,False,False
+form-112,Nutrition Services Discontinuation,0648a046-f404-4246-806f-c9ee78232d6d,Nutrition Discontinuation,General Clinical,Active,nutrition-discontinuation-form.json,Nutrition Services Discontinuation,1.0,True,False
+form-113,Nutrition Enrollment Form,849e88cc-6a78-463a-a4d2-e4e8c2f795bc,Nutrition Clinic,General Clinical,Active,nutrition-enrollment-form.json,Nutritional Enrollment Encounter,1.0,True,False
+form-114,Nutrition Form,b8357314-0f6a-4fc9-a5b7-339f47095d62,Nutrition,General Clinical,Active,nutrition-form.json,Nutrition Form,1,True,False
+form-115,Occupational Therapy Clinic Form,062a24b5-728b-4639-8176-197e8f458490,Consultation,General Clinical,Active,occupational-therapy-clinic-form.json,Form for updating Occupational Therapy diagnosis,2.0,True,False
+form-116,Oncology Clinical Consultation Form,31a371c6-3cfe-431f-94db-4acadad8d209,ONCOLOGY,General Clinical,Active,oncology-clinical-consultation-form.json,Oncology Clinical Encounter,2.0,True,False
+form-117,Ophthamology Clinical Form,235900ff-4d4a-4575-9759-96f325f5e291,Consultation,General Clinical,Active,ophthamology-clinical-form.json,A form used to capture ophthamology clinical Cases,2.0,True,False
+form-118,Opioid Overdose Encounter,d753bab3-0bbb-43f5-9796-5e95a5d641f3,KP HCW Overdose reporting,General Clinical,Active,opioid-overdose-encounter.json,Opioid Overdose Encounter,2.0,True,False
+form-119,Orthopaedic Clinic Visit,beec83df-6606-4019-8223-05a54a52f2b0,Consultation,General Clinical,Active,orthopaedic-clinic-visit-form.json,Orthopaedic Clinic Visit Form,2.1,True,False
+form-120,OTZ Activity Form,3ae95d48-0464-11ea-8d71-362b9e155667,OTZ Activity,HIV Care,Active,otz-activity.json,OTZ Activity Form,1,True,False
+form-121,OTZ Discontinuation Form,3ae955dc-0464-11ea-8d71-362b9e155667,OTZ Discontinuation,HIV Care,Active,otz-discontinuation.json,OTZ Discontinuation Form,1,True,False
+form-122,OTZ Enrollment Form,3ae95898-0464-11ea-8d71-362b9e155667,OTZ Enrollment,HIV Care,Active,otz-enrollment.json,OTZ Enrollment Form,1,True,False
+form-123,OVC Discontinuation Form,5cf013e8-09da-11ea-8d71-362b9e155667,OVC Discontinuation,General Clinical,Active,ovc-discontinuation.json,OVC Discontinuation Form,1,True,False
+form-124,OVC Enrollment Form,5cf01528-09da-11ea-8d71-362b9e155667,OVC Enrollment,General Clinical,Active,ovc-enrollment.json,OVC Enrollment Form,1,True,False
+form-125,Partograph Form,3791e5b7-2cdc-44fc-982b-a81135367c96,MCH Partograph,HIV Care,Active,partograph-form.json,A form for collecting the labor progress at the maternity,1.0,True,False
+form-126,Peadiatric Disclosure Checklist Form,45d9161f-5dbd-4b20-9d7a-e4ab6b36ec27,,General Clinical,Inactive,peaditric-disclosure-form.json,A form for documenting the disclosure process of a pediatrics.,1.0,False,False
+form-127,KVP Peer Educator Outreach Calendar,7492cffe-5874-4144-a1e6-c9e455472a35,KP Peer Calendar,General Clinical,Active,peer-calendar.json,KVP Peer Educator Outreach Calendar,2,True,False
+form-128,Peer Overdose Reporting Tool,92fd9c5a-c84a-483b-8d78-d4d7a600db30,KP Peer Overdose reporting,General Clinical,Active,peer-overdose-reporting-tool.json,Peer Overdose Reporting Tool,1,True,False
+form-129,KVP Peer Tracking Form,63917c60-3fea-11e9-b210-d663bd873d93,KP Tracing,General Clinical,Active,peer-tracking.json,Peer Tracking Form,2.0,True,False
+form-130,PEP FOLLOWUP Form,155ccbe2-a33f-4a58-8ce6-57a7372071ee,Violence PEP Follow up Encounter,HIV Care,Inactive,pep-follow-up-encounter.json,PEP follow up encounter,1,False,False
+form-131,PEP MANAGEMENT FORM FOR NON-OCCUPATIONAL EXPOSURE,92de9269-6bb4-4c24-8ec9-870aa2c64b5a,PEP Management Non OCN Encounter,HIV Care,Inactive,pep-management-non-ocn-form.json,PEP MANAGEMENT FOR NON-OCCUPATIONAL EXPOSURE,1.0,False,False
+form-132,PEP MANAGEMENT FORM FOR OCCUPATIONAL EXPOSURE,556718da-7564-4286-a081-c50f8e4b6504,PEP Management OCN Encounter,HIV Care,Inactive,pep-management-ocn-form.json,PEP Form Management for OCN,1.0.0,False,False
+form-133,PEP MANAGEMENT FORM FOR SURVIVORS,f44b2405-226b-47c4-b98f-b826ea4725ae,PEP Management Survivor Encounter,HIV Care,Inactive,pep-management-survivor-encounter.json,PEP Management for Survivors,1.0.0,False,False
+form-134,Physiotherapy Clinic Form,18c209ac-0787-4b51-b9aa-aa8b1581239c,Consultation,General Clinical,Active,physiotherapy-clinic-form.json,A form used to capture Physiotherapy  Cases,2.0,True,False
+form-135,PLHIV Link Facility Documentation Tracking form,052ede51-ddda-4f04-aa25-754ff40abf37,PLHIV Link Facility Documentation Tracking,HIV Care,Active,plhiv-link-facility-documentation-tracking-form.json,A form collecting data for KVP clients receiving ART status in a separate facility other than the DICE. ,2.1,True,False
+form-136,Postnatal Care (PNC) Discontinuation,30db888b-d6d3-47fb-b0c9-dbdf10a57ff5,MCH Mother Discontinuation,Maternal & Child Health,Active,pnc-discontinuation-form.json,PNC Services Discontinuation,1.0,True,False
+form-137,Postnatal Care (PNC) Enrollment Form,286598d5-1886-4f0d-9e5f-fa5473399cee,MCH Mother Enrollment,Maternal & Child Health,Active,pnc-enrollment-form.json,PNC Mother Enrollment Encounter,1.0,True,False
+form-138,POPC Clinical Form,d95e44dd-e389-42ae-a9b6-1160d8eeebc4,POPC,General Clinical,Active,popc-clinical-consultation-form.json,A form used to capture pediatric clinical Cases,2,True,False
+form-139,Post Delivery 48 hours Form,07dc609f-e607-43d6-9dc3-8bd405c4226a,MCH Mother Consultation,Maternal & Child Health,Active,post-delivery-form.json,A form used to capture Post Delivery 48 hours data,1.0,True,False
+form-140,Post-Mortem Form,2b61a73-4971-4fc0-b20b-9a30176317e2,Post-Mortem,General Clinical,Active,post-mortem-clinical-encounter.json,A form for used to in the examination of a body after death.,1.0,True,False
+form-141,Post Procedure Form,ac043326-c5f0-4d11-9e6f-f7266b3f3859,Post Operation,Surgical & Procedures,Active,post-procedure-notes-form.json,Post Procedure Form,1,True,False
+form-142,Postnatal Newborn Examination Form,503cc2df-1ea9-4a6e-bda1-195fc7783e59,MCH Mother Consultation,Maternal & Child Health,Active,postnatal-examination-form.json,A form to record the examination services offered postnatally at the maternity,2.0,True,False
+form-143,Leprosy Postoperative Follow-up Form,fe955bae-4124-4350-a32d-922304637e8f,Leprosy Postoperative,General Clinical,Active,postoperative-followup-rcs-form.json,Operation Assessment Form,1,True,False
+form-144,Sexual Violence Post Rape Care Form (MOH 363 part A),c46aa4fd-8a5a-4675-90a7-a6f2119f61d8,Sexual violence Post Rape Care 363A,HIV Care,Inactive,prc-form-part-a.json,Sexual Violence POST RAPE CARE Form (MOH 363 part A),1.0,False,False
+form-145,Sexual Violence Pyschological Assessment(MOH 363 part B),9d21275a-7657-433a-b305-a736423cc496,Sexual violence PRC Psychological Assessment 363B,HIV Care,Inactive,prc-form-part-b.json,Sexual Violence Pyschological Assessment(MOH 363 part B),1.0,False,False
+form-146,Pre-Conception Care Discontinuation,a9128c54-3a05-4d66-ba50-149565eadfd7,Pre-Conception Care,General Clinical,Active,pre-conception-care-discontinuation-form.json,Pre-Conception Discontinuation,1.0,True,False
+form-147,Pre-Conception Care Enrollment Form,236161a4-29ad-4282-9829-6684aab85daa,Pre-Conception Care,General Clinical,Active,pre-conception-care-enrollment-form.json,Pre-Conception Care Enrollment Encounter,1.0,True,False
+form-148,Pre- Conception Care Form,2cf38f9a-f910-492b-a055-e29924e513f8,Pre-Conception Care,General Clinical,Active,pre-conception-care-form.json,A form used to capture Pre- Conception Care data,1.0,True,False
+form-149,PreOperative Checklist Form,a14824ca-29af-4d37-b9da-6bdee39f8808,Pre-Operation Checklist,General Clinical,Active,pre-operative-checklist.json,PreOperative Checklist  Form,1,True,False
+form-150,PrEP Behavior Risk Assessment in the last six months,40374909-05fc-4af8-b789-ed9c394ac785,PrEP Behavior Risk Assessment,HIV Care,Active,prep-behavior-risk-assessment-last-six-months.json,PrEP Behavior Risk Assessment in the last six months,1,True,False
+form-151,PrEP Client Discontinuation,467c4cc3-25eb-4330-9cf6-e41b9b14cc10,PrEP Client Discontinuation,HIV Care,Active,prep-client-discontinuation.json,PrEP Client Discontinuation,1,True,False
+form-152,PrEP Follow Up,ee3e2017-52c0-4a54-99ab-ebb542fb8984,PrEP Consultation,HIV Care,Active,prep-follow-up.json,PrEP Follow Up,2.0,True,False
+form-153,PrEP Enrollment,d63eb2ee-d5e8-4ea4-b5ea-ea3670af03ac,PrEP Enrollment,HIV Care,Active,prep-initial-enrollment.json,PrEP Initial Enrollment Form,1,True,False
+form-154,PrEP Initial Form,1bfb09fc-56d7-4108-bd59-b2765fd312b8,PrEP Initial,HIV Care,Active,prep-initial.json,PrEP Initial Form,2.0,True,False
+form-155,PrEP INITIATION,d5ca78be-654e-4d23-836e-a934739be555,PrEP Enrollment,HIV Care,Active,prep-initiation.json,PrEP INITIATION,1,True,False
+form-156,PrEP Monthly Refill Form,291c03c8-a216-11e9-a2a3-2a2ae2dbcce4,PrEP Monthly refill,HIV Care,Active,prep-monthly-refill.json,PrEP Monthly Refill Form,1,True,False
+form-157,PrEP Treatment Verification,5c64e61a-7fdc-11ea-bc55-0242ac130003,KP PrEP Treatment Verification,HIV Care,Active,prep-treatment-verification.json,PrEP Treatment Verification,1,True,False
+form-158,Preventive Services,d3ea25c7-a3e8-4f57-a6a9-e802c3565a30,MCH Mother Consultation,General Clinical,Active,preventive-services.json,Preventive Services,1,True,False
+form-159,Progress Note,0038a296-62f8-4099-80e5-c9ea7590c157,Consultation,General Clinical,Active,progress-note.json,Progress Note,1.0,True,False
+form-160,Psychiatric Clinic Form,1fbd26f1-0478-437c-be1e-b8468bd03ffa,PSYCHIATRIC,Mental Health & Substance Use,Active,psychiatric-clinic-form.json,A form to collect psychiatric clinical services.,2,True,False
+form-161,Referral,bd12f98a-fcfe-4472-a858-17f28457932b,KP Referral,General Clinical,Active,referral.json,Referral,1,True,False
+form-162,Renal Clinical Form,6d0be8bd-5320-45a0-9463-60c9ee2b1338,Consultation,Non-Communicable Diseases,Active,renal-clinical-form.json,A form used to capture renal clinical Cases,2.0,True,False
+form-163, SARI Surveillance Form,be0f79d3-9e9a-414b-a1ca-6a2974110bc4,SARI Surveillance,Maternal & Child Health,Active,sari-surveillance-form.json,A form used to capture  SARI Cases,1.0,True,False
+form-164,SOPC Clinical Consultation Form,da1f7e74-5371-4997-8a02-b7b9303ddb61,SOPC,General Clinical,Active,sopc-clinical-consultation-form.json,Surgical Clinical Encounter,2,True,False
+form-165,Speech and Language Therapy Assessment Form,67f98072-1518-4beb-8a30-aa8a319ee3df,Speech and Language,General Clinical,Active,speech-language-therapy-clinic-adult-form.json,Speech and Language Speciality Clinic Form,2,True,False
+form-166,STI Treatment,318ad7be-e4da-481f-bcdd-0368cb7601c8,KP STI Detailed treatment,General Clinical,Active,sti-treatment.json,STI Treatment,1,True,False
+form-167,Surgical Safety Checklist (Sign In),2061790f-815e-43a9-8a1e-dae9e4956c2a,SOPC,Surgical & Procedures,Active,surgical-safety-checklist-sign-in-form.json,A form used to capture Surgical Safety Checklist Sign In,1.0,True,False
+form-168,Surgical Safety Checklist (Sign Out),982af61b-fd51-474c-85d2-0459b7e3640b,SOPC,Surgical & Procedures,Active,surgical-safety-checklist-sign-out-form.json,A form used to capture Surgical Safety Checklist Sign Out,1.0,True,False
+form-169,Surgical Safety Checklist (Time Out),923411a3-4aae-4242-ba85-bb5b5176e6b1,SOPC,Surgical & Procedures,Active,surgical-safety-checklist-time-out-form.json,A form used to capture Surgical Safety Checklist Time Out,1.0,True,False
+form-170,TB Discontinuation,4b296dd0-f6be-4007-9eb8-d0fd4e94fb3a,TB Discontinuation,TB Care,Active,tb-discontinuation.json,TB Discontinuation,1,True,False
+form-171,TB Enrollment,89994550-9939-40f3-afa6-173bce445c79,TB Enrollment,TB Care,Active,tb-enrollment.json,TB Enrollment,1,True,False
+form-172,TB FollowUp,2daabb77-7ad6-4952-864b-8d23e109c69d,TB FollowUp,TB Care,Active,tb-followup.json,TB FollowUp,1,True,False
+form-173,TB Initial,6a4f7090-f496-46d2-b582-5ac7e71a16e4,TB Enrollment,TB Care,Active,tb-initial.json,TB Initial Form,1,True,False
+form-174,Leprosy Initial Clinic Form,3b869649-81cd-42d2-bf71-a33dccaa04ff,Leprosy Initial,General Clinical,Active,tb-leprosy-clinic-form.json,TB Leprosy Speciality Clinic Form,1,True,False
+form-175,Leprosy Followup Form,a0336b03-6c14-4b73-97b0-d2bf345008ab,Leprosy Followup,General Clinical,Active,tb-leprosy-follow-up-visit-form.json,TB Leprosy Speciality Clinic Form,1,True,False
+form-176,TB Screening,59ed8e62-7f1f-40ae-a2e3-eabe350277ce,TB Screening,TB Care,Active,tb-screening.json,TB Screening,1,True,False
+form-177,Telehealth Consultation,32875d86-5f93-40ac-96f0-1dd0db6f8dc3,Consultation,General Clinical,Active,telehealth-consultation-form.json,Telehealth Consultation Form,1,True,False
+form-178,TPT Outcome,5bdd3b65-8b7b-46a0-9f7b-dfe764143848,IPT Outcome,TB Care,Active,tpt-discontinuation-form.json,TPT Outcome,1,True,False
+form-179,TPT FollowUp,9d0e4be8-ab72-4394-8df7-b509b9d45179,IPT FollowUp,TB Care,Active,tpt-followup.json,TPT FollowUp,1,True,False
+form-180,TPT Initial,9d75d6c7-2db8-44ba-8068-f1b3601a1cb9,IPT Initiation,TB Care,Active,tpt-initial.json,TPT Initial Form,1,True,False
+form-181,TPT Initiation,61ea2a72-b0f9-47cf-ae86-443f88656acc,IPT Initiation,TB Care,Active,tpt-initiation.json,TPT Initiation,1,True,False
+form-182,Triage,37f6bd8d-586a-4169-95fa-5781f987fe62,Triage,Laboratory & Diagnostics,Active,triage.json,Triage,2.1,True,False
+form-183,Urology Clinical Form,57df8a60-7585-4fc0-b51b-e10e568cf53c,Urology clinic,General Clinical,Active,urology-clinical-encounter-form.json,Urology Clinical Encounter Form,2,True,False
+form-184,Baseline questionaire form,fc2d5727-8392-4a49-b254-6c7d3138e81d,Vdot baseline,General Clinical,Active,vdot-baseline-questionnaire.json,Vdot baseline Questionaire Form,1,True,False
+form-185,Vdot Discontinuation form,967ed26f-2c4d-4cf4-9f49-1c27a8461756,Vdot Discontinuation,General Clinical,Active,vdot-discontinuation.json,Vdot Discontinuation Form,1,True,False
+form-186,Vdot Enrollment form,197c6ff4-059d-4440-9693-a4bc7520c7b4,Vdot Enrollment,General Clinical,Active,vdot-enrollment.json,Vdot Enrollment Form,1,True,False
+form-187,Violence Reporting Form,10cd2ca0-8d25-4876-b97c-b568a912957e,KP Violence screening,Gender-Based Violence,Active,violence-reporting.json,Violence Reporting Form,2.0,True,False
+form-188,Violence Screening,03767614-1384-4ce3-aea9-27e2f4e67d01,Violence Screening Encounter,Gender-Based Violence,Active,violence-screening.json,Violence Screening,1,True,False
+form-189,VMMC Circumcision Procedure Form,5ee93f48-960b-11ec-b909-0242ac120002,VMMC Procedure,Surgical & Procedures,Active,vmmc-circumcision-procedure.json,VMMC Circumcision Procedure Form,1,True,False
+form-190,VMMC Client Follow-Up Form,08873f91-7161-4f90-931d-65b131f2b12b,VMMC Client Follow up,Surgical & Procedures,Active,vmmc-client-follow-up.json,VMMC Client Follow-Up Form,1,True,False
+form-191,VMMC Discontinuation Form,bc6a9e7d-58f7-43c0-8334-d8011fef4000,VMMC Discontinuation,Surgical & Procedures,Active,vmmc-discontinuation.json,VMMC Discontinuation Form,1,True,False
+form-192,VMMC Enrollment Form,a74e3e4a-9e2a-41fb-8e64-4ba8a71ff984,VMMC Enrollment,Surgical & Procedures,Active,vmmc-enrollment.json,VMMC Enrollment Form,1,True,False
+form-193,VMMC Immediate Post-Operation Assessment Form,620b3404-9ae5-11ec-b909-0242ac120002,VMMC Immediate Post-Operation Assessment,Surgical & Procedures,Active,vmmc-immediate-post-operation-assessment.json,VMMC Immediate Post-Operation Assessment Form,1,True,False
+form-194,VMMC Initial Form,8afcaac3-e9db-4501-bff6-b6a41935b46e,VMMC Enrollment,Surgical & Procedures,Active,vmmc-initial.json,VMMC Initial Form,1,True,False
+form-195,VMMC Medical History and Physical Examination Form,d42aeb3d-d5d2-4338-a154-f75ddac78b59,VMMC Medical History and Examination,Surgical & Procedures,Active,vmmc-medical-history-and-physical-examination.json,VMMC Medical History and Physical Examination Form,1,True,False

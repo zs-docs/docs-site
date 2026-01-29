@@ -1,0 +1,60 @@
+# Global owners for all files
+* @zarish-docs-team
+
+# Main documentation sections
+/docs/ @docs-team @architecture-team
+/docs/README.md @docs-team
+/docs/getting-started/ @docs-team
+
+# Frontend documentation
+/docs/frontend/ @frontend-team @architecture-team
+/docs/frontend/overview.md @frontend-team @architecture-team
+/docs/frontend/esm-*.md @frontend-team
+/docs/frontend/mf-*.md @frontend-team
+
+# Backend documentation
+/docs/backend/ @backend-team @architecture-team
+/docs/backend/overview.md @backend-team @architecture-team
+/docs/backend/ms-*.md @backend-team
+/docs/backend/api-reference/ @api-team @backend-team
+
+# FHIR documentation
+/docs/fhir/ @fhir-architect @backend-team
+/docs/fhir/overview.md @fhir-architect
+/docs/fhir/profiles/ @fhir-architect @data-modeling-team
+/docs/fhir/extensions/ @fhir-architect @terminology-team
+/docs/fhir/value-sets/ @fhir-architect @terminology-team
+
+# Architecture documentation
+/docs/architecture/ @architecture-team @devops-team
+/docs/architecture/system-overview.md @architecture-team
+/docs/architecture/service-dependencies.md @architecture-team
+/docs/architecture/data-flows.md @architecture-team
+/docs/architecture/deployment-architecture.md @devops-team
+
+# Standards and guidelines
+/docs/standards/ @standards-team @architecture-team
+/docs/guides/ @devops-team @docs-team
+/docs/compliance/ @compliance-team @security-team
+
+# Project management
+/docs/project/ @docs-team @project-management
+/docs/project/progress.md @docs-team
+/docs/project/contribution.md @docs-team
+
+# Configuration files
+/mkdocs.yml @docs-team @frontend-team
+/.algolia/ @docs-team @frontend-team
+/.algolia/config.json @docs-team
+
+# GitHub workflows and automation
+/.github/ @devops-team @docs-team
+/.github/workflows/ @devops-team @docs-team
+/.github/workflows/deploy-docs.yml @devops-team @docs-team
+/.github/workflows/docs-maintenance.yml @docs-team @devops-team
+/.github/workflows/link-check.yml @docs-team @qa-team
+
+# Root files
+/README.md @docs-team @architecture-team
+/TODO.md @docs-team @project-management
+/CODEOWNERS @docs-team @devops-team

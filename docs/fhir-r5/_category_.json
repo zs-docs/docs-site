@@ -1,0 +1,8 @@
+{
+  "label": "Operations",
+  "position": 2,
+  "link": {
+    "type": "generated-index",
+    "description": "FHIR Operations supported by the platform."
+  }
+}

@@ -1,0 +1,147 @@
+Encounter Type Name,Encounter UUID,Form Category,Description,Form Count
+AEFI Investigation,f9d04e3ea88655dce3d080182d322979,General Clinical,Encounter type for General Clinical forms,1
+ART Preparation,2b66d545c5fcffa85e3987a9df06e8b2,HIV Care,Encounter type for HIV Care forms,1
+ART Refill,c08f678349e4ef83bdb7f3c734108bcc,HIV Care,Encounter type for HIV Care forms,1
+Adverse Drug Reaction,12e8120a3e8057f7a3affae5a57091ab,Mental Health & Substance Use,Encounter type for Mental Health & Substance Use forms,1
+Alcohol and Drug Abuse Screening,c84fffed8b7b89b76746d72f4779a833,Mental Health & Substance Use,Encounter type for Mental Health & Substance Use forms,1
+Audiology,7b3b3ccc40ef37b7d248dfd44f2e6bb9,General Clinical,Encounter type for General Clinical forms,1
+CCC Defaulter Tracing,f3f91eea9ea265f3d79f3fad8236b7e1,HIV Care,Encounter type for HIV Care forms,1
+COVID-19 Assessment Encounter,bbc7a25f46818639b88cab727a6c8e48,General Clinical,Encounter type for General Clinical forms,1
+CPM Discontinuation Encounter,0a73c0eed7679eaa8754b17423c66af1,General Clinical,Encounter type for General Clinical forms,1
+CPM Enrollment Encounter,fb7204ee7e3373853fdcfcbd10f93a9c,General Clinical,Encounter type for General Clinical forms,2
+CPM Referral Encounter,4c8d869bd9c62f4504165a8b4a7b997f,General Clinical,Encounter type for General Clinical forms,1
+CPM Screening Encounter,9fa4b81465a3a10055eb5d955207e5cc,Laboratory & Diagnostics,Encounter type for Laboratory & Diagnostics forms,1
+CWC Consultation,c6ac21b379a83bdb1dfae1c060524c48,General Clinical,Encounter type for General Clinical forms,1
+CWC Enrollment,7e252e12e5c4451c153569f9748fca42,Maternal & Child Health,Encounter type for Maternal & Child Health forms,1
+Cervical cancer screening,5c3a12d78b01dbe323d371e0bf66c237,Maternal & Child Health,Encounter type for Maternal & Child Health forms,2
+Consultation,6bf17fe4762ece7a82410014d090d322,Non-Communicable Diseases,Encounter type for Non-Communicable Diseases forms,13
+Cross Border Referral,e7b54986a8c55bf44493990f63c25db2,General Clinical,Encounter type for General Clinical forms,1
+Cross Border Screening,28912d4799b88717937aaff3ad3fce35,Laboratory & Diagnostics,Encounter type for Laboratory & Diagnostics forms,1
+Dermatology Clinic,29edacf9fe8d3e180c6deb0da75794e9,Mental Health & Substance Use,Encounter type for Mental Health & Substance Use forms,1
+Diabetic Clinic,dd95fb0f60f37159dc5b5045214c598f,Non-Communicable Diseases,Encounter type for Non-Communicable Diseases forms,1
+Doctor's Note,440b77ec0f48f656dc12fb1c1257aaaa,General Clinical,Encounter type for General Clinical forms,1
+Enhanced Adherence Screening,84428b2da27b98e2b903bc9de0fc8755,Maternal & Child Health,Encounter type for Maternal & Child Health forms,1
+FP Discontinuation,15b790f81d6179fd8dfd776457a4c713,General Clinical,Encounter type for General Clinical forms,1
+Family Planning,a027286cf7ffaef5b3ddbc5738dbf149,General Clinical,Encounter type for General Clinical forms,2
+Fluid Intake and Output,f25fa52258c536e17dd517ba115eef5b,General Clinical,Encounter type for General Clinical forms,1
+GOPC,59c86656c5cc0b6afec815d65982397c,General Clinical,Encounter type for General Clinical forms,1
+Generalized Anxiety Disorder Assessment,daf235fe6685e79058f5d7107134e8f6,Mental Health & Substance Use,Encounter type for Mental Health & Substance Use forms,1
+HIV Consultation,13335bdbc75618bb1b015e7f76a5e4f0,HIV Care,Encounter type for HIV Care forms,1
+HIV Discontinuation,5c9b7eaed3b653852bfa82a00fb25d6b,HIV Care,Encounter type for HIV Care forms,1
+HIV Enrollment,b3bf1cbbfcf069656a8648206a7f0111,HIV Care,Encounter type for HIV Care forms,2
+HIV self testing,980bfe9008b8550a67a6667af5da5795,HIV Care,Encounter type for HIV Care forms,1
+HTS,0662efefe1a28d0f7f2a38a3c390a24d,General Clinical,Encounter type for General Clinical forms,6
+High IIT Intervention,bf975634cb60bb21d0a29da6339ac6e4,General Clinical,Encounter type for General Clinical forms,1
+Home Visit Checklist,0e562dffacd7f3f640cfbc3b85a9c384,General Clinical,Encounter type for General Clinical forms,1
+ILI Surveillance,f2a05e6bf6e536017462372f530ba332,Maternal & Child Health,Encounter type for Maternal & Child Health forms,1
+IPD Discharge,fa970482cb26b29d718949971af4b7dc,Emergency & Critical Care,Encounter type for Emergency & Critical Care forms,1
+IPD Procedure,b6c102b933addcf7f126aacbcc58fd8e,Surgical & Procedures,Encounter type for Surgical & Procedures forms,1
+IPT FollowUp,210e91ecb096e38c3c8068c5304ac881,TB Care,Encounter type for TB Care forms,1
+IPT Initiation,d069823924eb152c0887bba5c8cac7fb,TB Care,Encounter type for TB Care forms,2
+IPT Outcome,2668a0de9789b167d74bd8ff05d068eb,TB Care,Encounter type for TB Care forms,1
+Infectious Disease,7fd0292cef5dd2cee4e89ae28dbd7766,General Clinical,Encounter type for General Clinical forms,1
+KP Alcohol screening,127c0930d1baac1a9ef1ec83c626a368,Mental Health & Substance Use,Encounter type for Mental Health & Substance Use forms,1
+KP Clinic Visit form,4f83de7482469f316f8f356d1a681b0b,General Clinical,Encounter type for General Clinical forms,1
+KP Contact,dfef481789ee444c57faf053c90733b3,General Clinical,Encounter type for General Clinical forms,2
+KP Depression screening,bde05f1fb6de9d027b6214d28e94a620,Mental Health & Substance Use,Encounter type for Mental Health & Substance Use forms,1
+KP Diagnosis,c60de30bd28650f7c224f1e08a96dc39,General Clinical,Encounter type for General Clinical forms,1
+KP Discontinuation,c4dc75741dd8b24303d8d734ab1c7196,General Clinical,Encounter type for General Clinical forms,1
+KP Enrollment,1121c3bbb3aa11e28131a0a45ecc869c,General Clinical,Encounter type for General Clinical forms,1
+KP HCW Overdose reporting,065bc75c77774465bd1e7cd6f9a8ab20,General Clinical,Encounter type for General Clinical forms,1
+KP Peer Calendar,c8fa641d411a801ded82d43a8cb4d4cd,General Clinical,Encounter type for General Clinical forms,1
+KP Peer Overdose reporting,1c3f8a886785dd3e9a118f5de002124e,General Clinical,Encounter type for General Clinical forms,1
+KP PrEP Treatment Verification,30c9f6d3740caa691015aaf3901df0c4,HIV Care,Encounter type for HIV Care forms,1
+KP Referral,87e1cbab82cc54cf40408746eb433743,General Clinical,Encounter type for General Clinical forms,1
+KP STI Detailed treatment,ce03f8eebf1760a2c92da2de3114b182,General Clinical,Encounter type for General Clinical forms,1
+KP Tracing,167db6ebe6a97bdcf293c78f9f2ddfa9,General Clinical,Encounter type for General Clinical forms,1
+KP Violence screening,2519c29bb60bb282abea516492c31955,Gender-Based Violence,Encounter type for Gender-Based Violence forms,1
+KP kpTreatmentVerification,cd5c439048a0b55805856672af51e6d6,HIV Care,Encounter type for HIV Care forms,1
+Lab Order,4991aeeb633afaf6e565c82023388316,Laboratory & Diagnostics,Encounter type for Laboratory & Diagnostics forms,1
+Lab Results,0311a86cf3e56e4c4af623324c2216d4,Laboratory & Diagnostics,Encounter type for Laboratory & Diagnostics forms,1
+Leprosy Followup,ea4c51160584b1d97d96f8e6a1a527ed,General Clinical,Encounter type for General Clinical forms,1
+Leprosy Initial,5325acdfc7f2caeb1992f5c1c8a4114f,General Clinical,Encounter type for General Clinical forms,1
+Leprosy Postoperative,430f0f34d18bac5d06d4650954eeb8ae,General Clinical,Encounter type for General Clinical forms,1
+MAT Cessation Encounter,ac9748a4be2ad51ff695e46cb3078ca6,Mental Health & Substance Use,Encounter type for Mental Health & Substance Use forms,1
+MAT Clinical Encounter,2cf680d38b3034276de2f2b487378bb3,Mental Health & Substance Use,Encounter type for Mental Health & Substance Use forms,1
+MAT Clinical eligibility assessment,20d74f8a364c61cad25011c1de695e15,Mental Health & Substance Use,Encounter type for Mental Health & Substance Use forms,1
+MAT Discontinuation Encounter,defdf759722f36a00a41f6b293a9afab,Mental Health & Substance Use,Encounter type for Mental Health & Substance Use forms,1
+MAT Initial registration Encounter,63980d414bbaed9616d96e9e56a2dfd6,Mental Health & Substance Use,Encounter type for Mental Health & Substance Use forms,1
+MAT Psychiatric intake and followup,28110ade806aa69d624984d36fd32a0e,Mental Health & Substance Use,Encounter type for Mental Health & Substance Use forms,1
+MAT Psychosocial intake and followup,01cb86b74700cb1a57d67c40aae33fcb,Mental Health & Substance Use,Encounter type for Mental Health & Substance Use forms,2
+MAT Transit/Referral Encounter,40b36b2d1f0963015c41c3f596b1a8fd,Mental Health & Substance Use,Encounter type for Mental Health & Substance Use forms,1
+MAT Treatment Encounter,5a1660e9b8459f0366e5b8c79b308adc,Mental Health & Substance Use,Encounter type for Mental Health & Substance Use forms,1
+MAXILLOFACIAL,49c6c510ddc68e4b171444f83de368e1,General Clinical,Encounter type for General Clinical forms,1
+MCH Child Discontinuation,2866ab6d7da7a8426ed06163374f800d,General Clinical,Encounter type for General Clinical forms,1
+MCH Child HEI Exit,7b92474d0acbc756d4df0435f12da497,Maternal & Child Health,Encounter type for Maternal & Child Health forms,1
+MCH Mother Consultation,ff97c8a1e59a811003f48296fc841e03,Maternal & Child Health,Encounter type for Maternal & Child Health forms,9
+MCH Mother Discontinuation,f152642c630f80fa971e1efa060ac0e3,Maternal & Child Health,Encounter type for Maternal & Child Health forms,3
+MCH Mother Enrollment,aa7c1b47c6b82a6cc9a8759587faff4c,Maternal & Child Health,Encounter type for Maternal & Child Health forms,3
+MCH Partograph,58a2c21860bd01454ac4979148c2742e,HIV Care,Encounter type for HIV Care forms,1
+MOPC,f82627c21b25e30e98b1ca5c89dfc559,General Clinical,Encounter type for General Clinical forms,1
+Morgue,5218f962a790a044d0c717adb0da8608,General Clinical,Encounter type for General Clinical forms,1
+Morgue Admission,1f63a311ab7a41e343d111e208902f03,Emergency & Critical Care,Encounter type for Emergency & Critical Care forms,1
+Mortuary Discharge,7acbfc3308bf4161fed283ba3fcf9efc,Emergency & Critical Care,Encounter type for Emergency & Critical Care forms,1
+NCD Discontinuation,0a1ac80b6f29e5eb46fc7bcf85b065f7,Non-Communicable Diseases,Encounter type for Non-Communicable Diseases forms,1
+NCD Followup,5d2c5334531af63d3cfe86f90a3a8cc2,Non-Communicable Diseases,Encounter type for Non-Communicable Diseases forms,1
+NCD Initial,a5967c62b4f3016b4880519ee1cb95c9,Non-Communicable Diseases,Encounter type for Non-Communicable Diseases forms,1
+Neurology clinic,24dd07d836df95b489b7d8bf0eadc233,General Clinical,Encounter type for General Clinical forms,1
+New born admission,4cf38c830746ca103f68a9accee32723,Maternal & Child Health,Encounter type for Maternal & Child Health forms,1
+Nursing Cardex,390d35e459f2105d1ee1c0b9202cbcb7,General Clinical,Encounter type for General Clinical forms,2
+Nutrition,cf6586f786c56ead1647fd78046397cd,General Clinical,Encounter type for General Clinical forms,1
+Nutrition Clinic,36cd177f8e8bffdaa2b4ed5bdeea4c15,General Clinical,Encounter type for General Clinical forms,1
+Nutrition Discontinuation,0a13e1178d26c97cc25147419361f35c,General Clinical,Encounter type for General Clinical forms,1
+ONCOLOGY,716d911914dc0e6c63bc5ab03d40406c,General Clinical,Encounter type for General Clinical forms,1
+OTZ Activity,597b9e9745014b915bb1981cc5f3e30b,HIV Care,Encounter type for HIV Care forms,1
+OTZ Discontinuation,ec296be90611f03aaf97649dea1826dc,HIV Care,Encounter type for HIV Care forms,1
+OTZ Enrollment,0bec8e5893ab3574727308dd9d313b67,HIV Care,Encounter type for HIV Care forms,1
+OVC Discontinuation,533ce854ae2be9b88690294c11a27e69,General Clinical,Encounter type for General Clinical forms,1
+OVC Enrollment,6c4e4f90225ff6d1f59764c3a38decd8,General Clinical,Encounter type for General Clinical forms,1
+Oncology screening,5292c79953e043bc1c0b77fd3308aa6a,Maternal & Child Health,Encounter type for Maternal & Child Health forms,1
+PEP Management Non OCN Encounter,cab976ffa25b22d619aac2f0099ef21d,HIV Care,Encounter type for HIV Care forms,1
+PEP Management OCN Encounter,29054b45666ca7d61586a8d35cb59ad0,HIV Care,Encounter type for HIV Care forms,1
+PEP Management Survivor Encounter,7d91aa2a2cfce68d19f2ccb3cfb27335,HIV Care,Encounter type for HIV Care forms,1
+PLHIV Link Facility Documentation Tracking,e6f678a6cab5bf6e1723b71e9171f9c7,HIV Care,Encounter type for HIV Care forms,1
+POPC,3ea24e5c50844174a302fa4948e3d9d3,General Clinical,Encounter type for General Clinical forms,1
+PSYCHIATRIC,fcdbdff4281d04e904e830c14ac60fc7,Mental Health & Substance Use,Encounter type for Mental Health & Substance Use forms,1
+Post Operation,743d70072f1f64df3fbcfce3f7b2c9ec,Surgical & Procedures,Encounter type for Surgical & Procedures forms,1
+Post-Mortem,362aaf2861763a50d0dea7fb0d700c45,General Clinical,Encounter type for General Clinical forms,1
+PrEP Behavior Risk Assessment,9dc61935c1f01fcb7739c19120db7894,HIV Care,Encounter type for HIV Care forms,1
+PrEP Client Discontinuation,5ad8bdf19c58cde3f71225ce22b1dad9,HIV Care,Encounter type for HIV Care forms,1
+PrEP Consultation,eb1ec16d6db4d60cc1f0cb0cc9394f0e,HIV Care,Encounter type for HIV Care forms,1
+PrEP Enrollment,665c4c003532012efb2d5f31cde8f98e,HIV Care,Encounter type for HIV Care forms,2
+PrEP Initial,4faf1898182ed832d32c991234d2ab43,HIV Care,Encounter type for HIV Care forms,1
+PrEP Monthly refill,d6ca83068b57d2a1e4463750c505b3eb,HIV Care,Encounter type for HIV Care forms,1
+Pre-Conception Care,ba170c0a29d33f3460f8a62399941645,General Clinical,Encounter type for General Clinical forms,3
+Pre-Operation Checklist,d8dea608ae526e959e39f50063d1fd7a,General Clinical,Encounter type for General Clinical forms,1
+Registration,0f98b7f230f3c91292f0de4c99e263f2,General Clinical,Encounter type for General Clinical forms,1
+SARI Surveillance,09c2cd792f2329c8230a43c894843b1b,Maternal & Child Health,Encounter type for Maternal & Child Health forms,1
+SOPC,18dcfb1f59a46fefe1d1805b51c20aef,General Clinical,Encounter type for General Clinical forms,4
+Sexual violence PRC Psychological Assessment 363B,417b8d486f2e706fafb9cbbd03fa83f9,HIV Care,Encounter type for HIV Care forms,1
+Sexual violence Post Rape Care 363A,f4fde4ed9dada66a85113c6c725513da,HIV Care,Encounter type for HIV Care forms,1
+Speech and Language,2d38b4a9b0f0185836a6c974ffb5760a,General Clinical,Encounter type for General Clinical forms,1
+TB Discontinuation,fdb9ee8d3e37ae584b10d1aea7a9a7fe,TB Care,Encounter type for TB Care forms,1
+TB Enrollment,6e63a1a517fb62a8f55eb0f33c9b8fd8,TB Care,Encounter type for TB Care forms,2
+TB FollowUp,45ef650525d9c6d5a7e1037050fd00c5,TB Care,Encounter type for TB Care forms,1
+TB Screening,994a6f646e2ea5ca749c030d2982c3c1,TB Care,Encounter type for TB Care forms,1
+Transfer Request,85c6989642f6e299e349730b1a45e285,Emergency & Critical Care,Encounter type for Emergency & Critical Care forms,2
+Triage,2665b3dd872e6e22967c884cc00ecf7a,Laboratory & Diagnostics,Encounter type for Laboratory & Diagnostics forms,1
+Urology clinic,bdba992fba5fce04dd93ffc14add51de,General Clinical,Encounter type for General Clinical forms,1
+VMMC Client Follow up,348865696aba82f19025333cbbd0bfc4,Surgical & Procedures,Encounter type for Surgical & Procedures forms,1
+VMMC Discontinuation,5a0bc4dcf4eae88a2ad6c5d0313a18ae,Surgical & Procedures,Encounter type for Surgical & Procedures forms,1
+VMMC Enrollment,5f81e21fa6feff65641c41d5b8501c8b,Surgical & Procedures,Encounter type for Surgical & Procedures forms,2
+VMMC Immediate Post-Operation Assessment,abebfcb1949e95712f47b983a9bcadcc,Surgical & Procedures,Encounter type for Surgical & Procedures forms,1
+VMMC Medical History and Examination,0321e964c6d434d59d8d0cfabec87bde,Surgical & Procedures,Encounter type for Surgical & Procedures forms,1
+VMMC Procedure,d882355485c6feae7144244300306aa4,Surgical & Procedures,Encounter type for Surgical & Procedures forms,1
+Vdot Discontinuation,7727bdec3e0b5b37bc5b7b3909783b03,General Clinical,Encounter type for General Clinical forms,1
+Vdot Enrollment,03900170abb4ac7d169de6eaa2b13cbd,General Clinical,Encounter type for General Clinical forms,1
+Vdot baseline,81f54062669d325e20676a043663ce9e,General Clinical,Encounter type for General Clinical forms,1
+Violence Community Linkage Encounter,a7b5449045e496af29fcceec1512867a,Gender-Based Violence,Encounter type for Gender-Based Violence forms,1
+Violence Consent Encounter,edc7d2758f81a87f485f399a7ad7ed28,Gender-Based Violence,Encounter type for Gender-Based Violence forms,1
+Violence Discontinuation Encounter,6c84a0fafee6e5eadff8a14dd08c6f2c,Gender-Based Violence,Encounter type for Gender-Based Violence forms,1
+Violence Enrollment Encounter,363f5cd5078896b2f2002caf633b8805,Gender-Based Violence,Encounter type for Gender-Based Violence forms,2
+Violence Legal Encounter,9903306a062bc63c43982a46dc2754d1,Gender-Based Violence,Encounter type for Gender-Based Violence forms,1
+Violence PEP Follow up Encounter,091882c76e28efb5732762537d9f4239,HIV Care,Encounter type for HIV Care forms,1
+Violence Perpetrator Details Encounter,c642d3280ca4fe7a0b008d4a9b3dee2d,Gender-Based Violence,Encounter type for Gender-Based Violence forms,1
+Violence Physical and Emotional Abuse,ba58b34762ce98d80ef30434a89feef2,Gender-Based Violence,Encounter type for Gender-Based Violence forms,1
+Violence Screening Encounter,4bda7f148a775811834f06f9d1952c86,Gender-Based Violence,Encounter type for Gender-Based Violence forms,1
+Violence Trauma Counselling Encounter,32540f5d8c18f06c79395b61f653ffb9,Gender-Based Violence,Encounter type for Gender-Based Violence forms,1

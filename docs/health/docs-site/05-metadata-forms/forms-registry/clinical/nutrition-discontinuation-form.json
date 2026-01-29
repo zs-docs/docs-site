@@ -1,0 +1,111 @@
+{
+	"name": "Nutrition Services Discontinuation",
+	"description": "Nutrition Services Discontinuation",
+	"version": "1.0",
+	"published": true,
+	"uuid": "0648a046-f404-4246-806f-c9ee78232d6d",
+	"retired": false,
+	"encounter": "Nutrition Discontinuation",
+	"meta": {
+	  "programs": {
+		"uuid": "42b654c5-de50-4fb9-b054-1ecc2b6f266b",
+		"isEnrollment": false,
+		"discontinuationDateQuestionId": "encDate"
+	  }
+	},
+	"pages": [
+	  {
+		"label": "Nutritional Services Discontinuation",
+		"sections": [
+		  {
+			"label": "Visit Details",
+			"isExpanded": "true",
+			"questions": [
+			  {
+				"label": "Discontinued Date:",
+				"type": "encounterDatetime",
+				"required": "true",
+				"questionOptions": {
+				  "rendering": "ui-select-extended"
+				},
+				"validators": [
+				  {
+					"type": "date",
+					"allowFutureDates": "false"
+				  }
+				],
+				"id": "encDate"
+			  },
+			  {
+				"label": "Provider:",
+				"type": "encounterProvider",
+				"required": "true",
+				"questionOptions": {
+				  "rendering": "ui-select-extended"
+				},
+				"id": "encProvider "
+			  },
+			  {
+				"label": "Location:",
+				"type": "encounterLocation",
+				"required": "true",
+				"questionOptions": {
+				  "rendering": "ui-select-extended"
+				},
+				"id": "encLocation"
+			  }
+			]
+		  },
+		  {
+			"label": "Nutritional Services Discontinuation",
+			"isExpanded": "true",
+			"questions": [
+			  {
+				"label": "Exit Criteria",
+				"type": "obs",
+				"required": "true",
+				"questionOptions": {
+				  "rendering": "select",
+				  "concept": "161555AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+				  "answers": [
+					{
+						"concept": "160571AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+						"label": "Wants to get pregnant"
+					},
+					{
+						"concept": "1434AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+						"label": "Confirmed pregnant"
+					},
+					{
+						"concept": "167533AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+						"label": "Wants to stop using Family planning"
+					},
+					{
+						"concept": "160754AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+						"label": "Adverse reactions"
+					},
+					{
+					  "concept": "159492AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+					  "label": "Transferred Out"
+					},
+					{
+					  "concept": "5240AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+					  "label": "Lost to follow up"
+					},
+					{
+					  "concept": "160432AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+					  "label": "Died"
+					}
+				  ]
+				},
+				"id": "idReason"
+			  }
+			]
+		  }
+		]
+	  }
+	],
+	"processor": "EncounterFormProcessor",
+	"referencedForms": [],
+    "encounterType": "41cc14fa-6011-4939-8c2c-0d1c2554efc8"
+  }

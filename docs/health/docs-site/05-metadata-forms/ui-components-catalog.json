@@ -1,0 +1,405 @@
+{
+  "components": {
+    "FHIRPatientName": {
+      "type": "object",
+      "props": {
+        "familyPath": "/name/family",
+        "givenPath": "/name/given",
+        "prefixPath": "/name/prefix",
+        "suffixPath": "/name/suffix",
+        "usePath": "/name/use",
+        "validation": "FHIR.R5.HumanName",
+        "required": ["family", "given"]
+      },
+      "ui": {
+        "component": "NameInput",
+        "fields": {
+          "family": {
+            "type": "text",
+            "label": "Family Name",
+            "placeholder": "Enter family name",
+            "maxLength": 100,
+            "required": true
+          },
+          "given": {
+            "type": "text",
+            "label": "Given Name",
+            "placeholder": "Enter given name",
+            "maxLength": 100,
+            "required": true
+          },
+          "prefix": {
+            "type": "select",
+            "label": "Prefix",
+            "options": ["Mr.", "Mrs.", "Ms.", "Dr.", "Prof."],
+            "required": false
+          }
+        }
+      }
+    },
+    "FHIRPatientIdentifier": {
+      "type": "object",
+      "props": {
+        "systemPath": "/identifier/system",
+        "valuePath": "/identifier/value",
+        "typePath": "/identifier/type",
+        "validation": "FHIR.R5.Identifier",
+        "required": ["system", "value", "type"]
+      },
+      "ui": {
+        "component": "IdentifierInput",
+        "fields": {
+          "system": {
+            "type": "url",
+            "label": "Identifier System",
+            "placeholder": "https://terminology.zs-his.com/identifier-types",
+            "required": true,
+            "readonly": true
+          },
+          "type": {
+            "type": "select",
+            "label": "Identifier Type",
+            "options": [
+              {"value": "MRN", "label": "Medical Record Number"},
+              {"value": "NID", "label": "National ID"},
+              {"value": "PASSPORT", "label": "Passport Number"},
+              {"value": "BIRTH_CERT", "label": "Birth Certificate"}
+            ],
+            "required": true
+          },
+          "value": {
+            "type": "text",
+            "label": "Identifier Value",
+            "placeholder": "Enter identifier value",
+            "required": true,
+            "validation": {
+              "pattern": "^[A-Z0-9]{6,20}$",
+              "message": "Identifier must be 6-20 alphanumeric characters"
+            }
+          }
+        }
+      }
+    },
+    "FHIRPatientGender": {
+      "type": "string",
+      "props": {
+        "path": "/gender",
+        "validation": "FHIR.R5.AdministrativeGender",
+        "required": true
+      },
+      "ui": {
+        "component": "RadioGroup",
+        "label": "Gender",
+        "options": [
+          {"value": "male", "label": "Male"},
+          {"value": "female", "label": "Female"},
+          {"value": "other", "label": "Other"},
+          {"value": "unknown", "label": "Unknown"}
+        ],
+        "required": true
+      }
+    },
+    "FHIRPatientBirthDate": {
+      "type": "date",
+      "props": {
+        "path": "/birthDate",
+        "validation": "FHIR.R5.date",
+        "required": true
+      },
+      "ui": {
+        "component": "DatePicker",
+        "label": "Date of Birth",
+        "placeholder": "YYYY-MM-DD",
+        "required": true,
+        "validation": {
+          "max": "today",
+          "min": "1900-01-01",
+          "message": "Please enter a valid birth date"
+        }
+      }
+    },
+    "FHIRPatientAddress": {
+      "type": "object",
+      "props": {
+        "usePath": "/address/use",
+        "typePath": "/address/type",
+        "linePath": "/address/line",
+        "cityPath": "/address/city",
+        "districtPath": "/address/district",
+        "statePath": "/address/state",
+        "postalCodePath": "/address/postalCode",
+        "countryPath": "/address/country",
+        "validation": "FHIR.R5.Address",
+        "required": ["line", "city", "country"]
+      },
+      "ui": {
+        "component": "AddressInput",
+        "fields": {
+          "use": {
+            "type": "select",
+            "label": "Address Type",
+            "options": [
+              {"value": "home", "label": "Home"},
+              {"value": "work", "label": "Work"},
+              {"value": "temp", "label": "Temporary"},
+              {"value": "old", "label": "Old/Previous"}
+            ],
+            "required": false
+          },
+          "line": {
+            "type": "textarea",
+            "label": "Street Address",
+            "placeholder": "Enter street address",
+            "rows": 2,
+            "required": true
+          },
+          "city": {
+            "type": "text",
+            "label": "City/District",
+            "placeholder": "Enter city or district",
+            "required": true,
+            "maxLength": 100
+          },
+          "state": {
+            "type": "select",
+            "label": "Division",
+            "options": [
+              {"value": "Barishal", "label": "Barishal"},
+              {"value": "Chattogram", "label": "Chattogram"},
+              {"value": "Dhaka", "label": "Dhaka"},
+              {"value": "Khulna", "label": "Khulna"},
+              {"value": "Rajshahi", "label": "Rajshahi"},
+              {"value": "Rangpur", "label": "Rangpur"},
+              {"value": "Sylhet", "label": "Sylhet"}
+            ],
+            "required": true
+          },
+          "postalCode": {
+            "type": "text",
+            "label": "Postal Code",
+            "placeholder": "Enter postal code",
+            "validation": {
+              "pattern": "^[0-9]{4}$",
+              "message": "Postal code must be 4 digits"
+            }
+          },
+          "country": {
+            "type": "select",
+            "label": "Country",
+            "options": [
+              {"value": "BD", "label": "Bangladesh"}
+            ],
+            "required": true,
+            "readonly": true
+          }
+        }
+      }
+    },
+    "FHIRPatientContact": {
+      "type": "object",
+      "props": {
+        "systemPath": "/telecom/system",
+        "valuePath": "/telecom/value",
+        "usePath": "/telecom/use",
+        "validation": "FHIR.R5.ContactPoint",
+        "required": ["system", "value"]
+      },
+      "ui": {
+        "component": "ContactInput",
+        "fields": {
+          "system": {
+            "type": "select",
+            "label": "Contact Type",
+            "options": [
+              {"value": "phone", "label": "Phone"},
+              {"value": "email", "label": "Email"},
+              {"value": "sms", "label": "SMS"}
+            ],
+            "required": true
+          },
+          "use": {
+            "type": "select",
+            "label": "Usage",
+            "options": [
+              {"value": "home", "label": "Home"},
+              {"value": "work", "label": "Work"},
+              {"value": "mobile", "label": "Mobile"},
+              {"value": "temp", "label": "Temporary"}
+            ],
+            "required": false
+          },
+          "value": {
+            "type": "text",
+            "label": "Contact Value",
+            "placeholder": "Enter phone number or email",
+            "required": true,
+            "validation": {
+              "conditional": {
+                "phone": {
+                  "pattern": "^[+]?[0-9]{10,15}$",
+                  "message": "Please enter a valid phone number"
+                },
+                "email": {
+                  "pattern": "^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\\.[a-zA-Z]{2,}$",
+                  "message": "Please enter a valid email address"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "FHIRObservationVitalSigns": {
+      "type": "object",
+      "props": {
+        "codePath": "/code/coding/0/code",
+        "systemPath": "/code/coding/0/system",
+        "valuePath": "/valueQuantity/value",
+        "unitPath": "/valueQuantity/unit",
+        "validation": "FHIR.R5.Observation",
+        "required": ["code", "valueQuantity"]
+      },
+      "ui": {
+        "component": "VitalSignsInput",
+        "vitalSigns": {
+          "8302-2": {
+            "label": "Height",
+            "unit": "cm",
+            "min": 50,
+            "max": 250,
+            "decimal": 1
+          },
+          "29163-1": {
+            "label": "Weight",
+            "unit": "kg",
+            "min": 1,
+            "max": 500,
+            "decimal": 1
+          },
+          "8462-4": {
+            "label": "Diastolic Blood Pressure",
+            "unit": "mmHg",
+            "min": 40,
+            "max": 150,
+            "decimal": 0
+          },
+          "8480-6": {
+            "label": "Systolic Blood Pressure",
+            "unit": "mmHg",
+            "min": 70,
+            "max": 250,
+            "decimal": 0
+          },
+          "8867-4": {
+            "label": "Heart Rate",
+            "unit": "/min",
+            "min": 30,
+            "max": 200,
+            "decimal": 0
+          },
+          "9279-1": {
+            "label": "Respiratory Rate",
+            "unit": "/min",
+            "min": 10,
+            "max": 40,
+            "decimal": 0
+          },
+          "8310-5": {
+            "label": "Body Temperature",
+            "unit": "°C",
+            "min": 35,
+            "max": 42,
+            "decimal": 1
+          },
+          "8328-7": {
+            "label": "Body Mass Index",
+            "unit": "kg/m2",
+            "min": 10,
+            "max": 50,
+            "decimal": 1
+          }
+        }
+      }
+    }
+  },
+  "forms": {
+    "patientRegistration": {
+      "title": "Patient Registration Form",
+      "description": "Complete patient registration with demographic and contact information",
+      "sections": [
+        {
+          "title": "Personal Information",
+          "components": ["FHIRPatientName", "FHIRPatientGender", "FHIRPatientBirthDate"]
+        },
+        {
+          "title": "Patient Identifiers",
+          "components": ["FHIRPatientIdentifier"],
+          "repeatable": true,
+          "maxRepeats": 5
+        },
+        {
+          "title": "Contact Information",
+          "components": ["FHIRPatientContact"],
+          "repeatable": true,
+          "maxRepeats": 3
+        },
+        {
+          "title": "Address Information",
+          "components": ["FHIRPatientAddress"],
+          "repeatable": true,
+          "maxRepeats": 3
+        }
+      ],
+      "validation": {
+        "required": ["FHIRPatientName", "FHIRPatientGender", "FHIRPatientBirthDate", "FHIRPatientIdentifier"],
+        "custom": [
+          {
+            "name": "validateAge",
+            "description": "Patient must be between 0 and 150 years old",
+            "script": "return calculateAge(birthDate) >= 0 && calculateAge(birthDate) <= 150;"
+          }
+        ]
+      }
+    },
+    "vitalSigns": {
+      "title": "Vital Signs Recording",
+      "description": "Record patient vital signs using standard LOINC codes",
+      "sections": [
+        {
+          "title": "Measurements",
+          "components": ["FHIRObservationVitalSigns"],
+          "repeatable": true
+        }
+      ],
+      "validation": {
+        "required": ["FHIRObservationVitalSigns"],
+        "custom": [
+          {
+            "name": "validateBP",
+            "description": "Systolic must be greater than diastolic",
+            "script": "return systolic > diastolic;"
+          }
+        ]
+      }
+    }
+  },
+  "aiPrompts": {
+    "createPatientForm": "Create a patient registration form with name, gender, birth date, and contact information",
+    "createVitalSignsForm": "Create a vital signs form for recording height, weight, blood pressure, heart rate, respiratory rate, and temperature",
+    "createAddressForm": "Create an address form with street, city, division, postal code, and country fields for Bangladesh"
+  },
+  "generatedExamples": {
+    "patientRegistrationPrompt": "Create a patient registration form",
+    "generatedJSON": {
+      "form": "patientRegistration",
+      "components": ["FHIRPatientName", "FHIRPatientGender", "FHIRPatientBirthDate"],
+      "ui": {
+        "layout": "vertical",
+        "sections": [
+          {"title": "Personal Info", "components": ["name", "gender", "birthDate"]},
+          {"title": "Contact", "components": ["phone", "email"]}
+        ]
+      }
+    }
+  }
+}

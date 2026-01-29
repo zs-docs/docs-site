@@ -1,0 +1,111 @@
+{
+  "resourceType": "ImplementationGuide",
+  "id": "zarish-his-examples",
+  "url": "https://fhir.zs-his.com/ImplementationGuide/zarish-his-examples",
+  "version": "1.0.0",
+  "name": "ZARISHHISExamples",
+  "title": "ZARISH Hospital Information System - Example Implementation Guide",
+  "status": "draft",
+  "publisher": "ZARISH Health Tech",
+  "description": "Example FHIR Implementation Guide for ZARISH HIS with sample resources and validation examples",
+  "fhirVersion": ["5.0.0"],
+  "copyright": "© 2026 ZARISH Health Tech. All rights reserved.",
+  "license": "Apache-2.0",
+  "contact": [
+    {
+      "name": "FHIR Implementation Team",
+      "telecom": [
+        {
+          "system": "email",
+          "value": "fhir-team@zs-his.com",
+          "use": "work"
+        }
+      ]
+    }
+  ],
+  "jurisdiction": [
+    {
+      "coding": [
+        {
+          "system": "urn:iso:std:iso:3166",
+          "code": "BD",
+          "display": "Bangladesh"
+        }
+      ]
+    }
+  ],
+  "dependsOn": [
+    {
+      "id": "zarish-his-core",
+      "uri": "https://fhir.zs-his.com/ImplementationGuide/zarish-his-core",
+      "packageId": "zarish-his-core",
+      "version": "1.0.0"
+    }
+  ],
+  "definition": {
+    "resource": [
+      {
+        "reference": {
+          "reference": "StructureDefinition/zarish-patient",
+          "type": "StructureDefinition"
+        },
+        "name": "ZARISH Patient Profile",
+        "description": "Patient profile extended for ZARISH HIS with Bangladesh-specific identifiers and local requirements",
+        "isExample": false
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/zarish-encounter",
+          "type": "StructureDefinition"
+        },
+        "name": "ZARISH Encounter Profile",
+        "description": "Encounter profile for ZARISH HIS with enhanced service type categorization and billing integration",
+        "isExample": false
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/zarish-observation",
+          "type": "StructureDefinition"
+        },
+        "name": "ZARISH Observation Profile",
+        "description": "Observation profile for ZARISH HIS with LOINC coding support and local laboratory standards",
+        "isExample": false
+      }
+    ],
+    "page": [
+      {
+        "nameUrl": "index.html",
+        "title": "Home",
+        "generation": "html"
+      },
+      {
+        "nameUrl": "examples.html",
+        "title": "Examples",
+        "generation": "html"
+      },
+      {
+        "nameUrl": "validation.html",
+        "title": "Validation",
+        "generation": "html"
+      }
+    ],
+    "parameter": [
+      {
+        "code": "copyrightyear",
+        "value": "2026+"
+      },
+      {
+        "code": "releaselabel",
+        "value": "CI Build"
+      },
+      {
+        "code": "autoload-resources",
+        "value": true
+      },
+      {
+        "code": "usage-stats",
+        "value": "https://analytics.zs-his.com/fhir-ig"
+      }
+    ]
+  }
+}

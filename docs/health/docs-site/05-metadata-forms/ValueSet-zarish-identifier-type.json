@@ -1,0 +1,18 @@
+{
+  "resourceType": "ValueSet",
+  "id": "zarish-identifier-type-valueset",
+  "url": "https://fhir.zs-his.com/ValueSet/identifier-type",
+  "version": "1.0.0",
+  "name": "ZARISHIdentifierTypeValueSet",
+  "title": "ZARISH Identifier Type Value Set",
+  "status": "active",
+  "publisher": "ZARISH Health Tech",
+  "description": "Value set for identifier types used in ZARISH HIS.",
+  "compose": {
+    "include": [
+      {
+        "system": "https://fhir.zs-his.com/CodeSystem/identifier-type"
+      }
+    ]
+  }
+}

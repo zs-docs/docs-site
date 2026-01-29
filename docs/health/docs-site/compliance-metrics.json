@@ -1,0 +1,33 @@
+{
+  "audit_log_retention": {
+    "requirement": "6 years retention",
+    "implementation": "Automated log rotation with 6-year retention",
+    "status": "COMPLIANT",
+    "last_verified": "2026-01-21T05:12:45.367581",
+    "details": "Audit logs automatically retained for 6 years per HIPAA requirements"
+  },
+  "encryption_compliance": {
+    "at_rest": {
+      "algorithm": "AES-256",
+      "status": "COMPLIANT"
+    },
+    "in_transit": {
+      "protocol": "TLS 1.3",
+      "status": "COMPLIANT"
+    },
+    "key_management": {
+      "system": "AWS KMS",
+      "rotation": "90 days",
+      "status": "COMPLIANT"
+    }
+  },
+  "authentication_compliance": {
+    "mfa_required": true,
+    "jwt_tokens": true,
+    "rbac_implemented": true,
+    "session_timeout": "15 minutes",
+    "status": "COMPLIANT"
+  },
+  "overall_score": 100.0,
+  "generated_at": "2026-01-21T05:12:45.367596"
+}

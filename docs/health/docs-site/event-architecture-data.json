@@ -1,0 +1,56 @@
+{
+  "services": [
+    {
+      "name": "ms-patient-registry",
+      "path": "/home/runner/work/docs/docs/02-microservices/ms-patient-registry",
+      "events_published": [
+        "PatientUpdatedEvent",
+        "PatientDeactivatedEvent",
+        "PatientCreatedEvent   = \"patient.created\"",
+        "PatientCreatedEvent",
+        "PatientMergedEvent"
+      ],
+      "last_updated": "2026-01-21T05:12:38.395965"
+    },
+    {
+      "name": "ms-billing-engine",
+      "path": "/home/runner/work/docs/docs/02-microservices/ms-billing-engine",
+      "events_published": [],
+      "last_updated": "2026-01-21T05:12:38.395965"
+    }
+  ],
+  "event_patterns": {
+    "patient_lifecycle": [
+      {
+        "event": "PatientUpdatedEvent",
+        "service": "ms-patient-registry"
+      },
+      {
+        "event": "PatientDeactivatedEvent",
+        "service": "ms-patient-registry"
+      },
+      {
+        "event": "PatientCreatedEvent   = \"patient.created\"",
+        "service": "ms-patient-registry"
+      },
+      {
+        "event": "PatientCreatedEvent",
+        "service": "ms-patient-registry"
+      },
+      {
+        "event": "PatientMergedEvent",
+        "service": "ms-patient-registry"
+      }
+    ],
+    "billing_events": [],
+    "clinical_events": [],
+    "security_events": []
+  },
+  "health_status": {
+    "total_services": 2,
+    "services_with_events": 1,
+    "services_documented": 2,
+    "event_flow_diagrams": 0
+  },
+  "generated_at": "2026-01-21T05:12:45.408269"
+}

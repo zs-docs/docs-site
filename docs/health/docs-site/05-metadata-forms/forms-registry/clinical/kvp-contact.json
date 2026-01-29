@@ -1,0 +1,65 @@
+{
+  "name": "KVP Contact Form",
+  "description": "Contact form",
+  "version": "2.0",
+  "published": true,
+  "uuid": "185dec84-df6f-4fc7-a370-15aa8be531ec",
+  "retired": false,
+  "encounter": "KP Contact",
+  "meta": {
+    "programs": {
+      "uuid": "7447305a-18a7-11e9-ab14-d663bd873d93",
+      "isEnrollment": true,
+      "discontinuationDateQuestionId": ""
+    }
+  },
+  "pages": [
+    {
+      "label": "KVP Contact Form",
+      "sections": [
+        {
+          "label": "Encounter Details",
+          "isExpanded": "true",
+          "questions": [
+            {
+              "label": "Date:",
+              "type": "encounterDatetime",
+              "required": "true",
+              "questionOptions": {
+                "rendering": "ui-select-extended"
+              },
+              "validators": [
+                {
+                  "type": "date",
+                  "allowFutureDates": "false"
+                }
+              ],
+              "id": "encDate"
+            },
+            {
+              "label": "Provider:",
+              "type": "encounterProvider",
+              "required": "true",
+              "questionOptions": {
+                "rendering": "ui-select-extended"
+              },
+              "id": "encProvider "
+            },
+            {
+              "label": "Location:",
+              "type": "encounterLocation",
+              "required": "true",
+              "questionOptions": {
+                "rendering": "ui-select-extended"
+              },
+              "id": "encLocation"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "processor": "EncounterFormProcessor",
+  "referencedForms": [],
+  "encounterType": "ea68aad6-4655-4dc5-80f2-780e33055a9e"
+}

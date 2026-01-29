@@ -1,0 +1,64 @@
+{
+	"name": "PrEP INITIATION",
+	"description": "PrEP INITIATION",
+	"version": "1",
+	"published": true,
+	"uuid": "d5ca78be-654e-4d23-836e-a934739be555",
+	"retired": false,
+	"encounter": "PrEP Enrollment",
+	"meta": {
+		"programs": {
+		  "uuid": "214cad1c-bb62-4d8e-b927-810a046daf62",
+		  "isEnrollment": true,
+		  "discontinuationDateQuestionId": ""
+		}
+	},
+	"pages": [
+	  {
+		"label": "Prep Initiation",
+		"sections": [
+		  {
+			"label": "Visit Details",
+			"isExpanded": "true",
+			"questions": [
+			  {
+				"label": "Date:",
+				"type": "encounterDatetime",
+				"required": "true",
+				"questionOptions": {
+				  "rendering": "ui-select-extended"
+				},
+				"validators": [
+				  {
+					"type": "date",
+					"allowFutureDates": "false"
+				  }
+				],
+				"id": "encDate"
+			  },
+			  {
+				"label": "Provider:",
+				"type": "encounterProvider",
+				"required": "true",
+				"questionOptions": {
+				  "rendering": "encounter-provider"
+				},
+				"id": "encProvider "
+			  },
+			  {
+				"label": "Location:",
+				"type": "encounterLocation",
+				"required": "true",
+				"questionOptions": {
+				  "rendering": "encounter-location"
+				},
+				"id": "encLocation"
+			  }
+			]
+		  }
+		]
+	  }
+	],
+	"processor": "EncounterFormProcessor",
+	"referencedForms": []
+}

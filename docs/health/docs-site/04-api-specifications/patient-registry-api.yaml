@@ -1,0 +1,499 @@
+openapi: 3.0.3
+info:
+  title: ZARISH HIS Patient Registry API
+  description: API for managing patient records in ZARISH HIS
+  version: 1.0.0
+  contact:
+    name: ZARISH HIS API Team
+    email: api@zs-his.com
+  license:
+    name: MIT
+    url: https://opensource.org/licenses/MIT
+
+servers:
+  - url: https://zs-his.github.io/docs/v1/patient-registry
+    description: "Staging and Documentation server"
+  - url: https://api.zarishsphere.com/v1/patient-registry
+    description: "Production server (planned)"
+  - url: https://staging-api.zarishsphere.com/v1/patient-registry
+    description: "Staging server (planned)"
+
+paths:
+  /patient-registry/patients:
+    get:
+      summary: List patients
+      description: Retrieve a paginated list of patients
+      parameters:
+        - name: page
+          in: query
+          schema:
+            type: integer
+            default: 1
+        - name: limit
+          in: query
+          schema:
+            type: integer
+            default: 50
+        - name: search
+          in: query
+          schema:
+            type: string
+        - name: gender
+          in: query
+          schema:
+            type: string
+            enum: [male, female, other]
+        - name: is_active
+          in: query
+          schema:
+            type: boolean
+      responses:
+        '200':
+          description: Successful response
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  data:
+                    type: array
+                    items:
+                      $ref: '#/components/schemas/Patient'
+                  meta:
+                    $ref: '#/components/schemas/PaginationMeta'
+              example:
+                data:
+                  - id: patient-123
+                    mrn: MRN123456789
+                    first_name: John
+                    last_name: Doe
+                    date_of_birth: 1990-01-01
+                    gender: male
+                    is_active: true
+                    created_at: 2024-01-01T12:00:00Z
+                meta:
+                  pagination:
+                    page: 1
+                    limit: 50
+                    total: 150
+                    total_pages: 3
+    
+    post:
+      summary: Create patient
+      description: Create a new patient record
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/CreatePatientRequest'
+            example:
+              mrn: MRN123456789
+              first_name: John
+              last_name: Doe
+              date_of_birth: 1990-01-01
+              gender: male
+              phone_number: +1234567890
+              email: john.doe@example.com
+      responses:
+        '201':
+          description: Patient created successfully
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  data:
+                    $ref: '#/components/schemas/Patient'
+                  meta:
+                    type: object
+                    properties:
+                      version:
+                        type: string
+                      timestamp:
+                        type: string
+                        format: date-time
+
+  /patient-registry/patients/{id}:
+    get:
+      summary: Get patient by ID
+      description: Retrieve a specific patient by their ID
+      parameters:
+        - name: id
+          in: path
+          required: true
+          schema:
+            type: string
+          description: Patient ID
+      responses:
+        '200':
+          description: Patient found
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  data:
+                    $ref: '#/components/schemas/Patient'
+                  meta:
+                    type: object
+                    properties:
+                      version:
+                        type: string
+                      timestamp:
+                        type: string
+                        format: date-time
+        '404':
+          description: Patient not found
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Error'
+    
+    put:
+      summary: Update patient
+      description: Update all patient information
+      parameters:
+        - name: id
+          in: path
+          required: true
+          schema:
+            type: string
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/UpdatePatientRequest'
+      responses:
+        '200':
+          description: Patient updated successfully
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  data:
+                    $ref: '#/components/schemas/Patient'
+        '404':
+          description: Patient not found
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Error'
+    
+    delete:
+      summary: Deactivate patient
+      description: Deactivate a patient record (soft delete)
+      parameters:
+        - name: id
+          in: path
+          required: true
+          schema:
+            type: string
+      responses:
+        '204':
+          description: Patient deactivated successfully
+        '404':
+          description: Patient not found
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Error'
+
+  /patient-registry/patients/search:
+    get:
+      summary: Search patients
+      description: Search patients by name, MRN, or phone number
+      parameters:
+        - name: q
+          in: query
+          required: true
+          schema:
+            type: string
+          description: Search query
+        - name: fields
+          in: query
+          schema:
+            type: string
+            description: Fields to search in (name,mrn,phone,email)
+        - name: limit
+          in: query
+          schema:
+            type: integer
+            default: 10
+            maximum: 50
+      responses:
+        '200':
+          description: Search results
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  data:
+                    type: array
+                    items:
+                      $ref: '#/components/schemas/PatientSearchResult'
+                  meta:
+                    type: object
+                    properties:
+                      query:
+                        type: string
+                      total_results:
+                        type: integer
+                      search_time:
+                        type: number
+
+components:
+  schemas:
+    Patient:
+      type: object
+      properties:
+        id:
+          type: string
+          example: patient-123
+        mrn:
+          type: string
+          example: MRN123456789
+        first_name:
+          type: string
+          example: John
+        last_name:
+          type: string
+          example: Doe
+        middle_name:
+          type: string
+          example: William
+        date_of_birth:
+          type: string
+          format: date
+          example: 1990-01-01
+        gender:
+          type: string
+          enum: [male, female, other]
+          example: male
+        phone_number:
+          type: string
+          example: +1234567890
+        email:
+          type: string
+          format: email
+          example: john.doe@example.com
+        address:
+          $ref: '#/components/schemas/Address'
+        emergency_contact:
+          $ref: '#/components/schemas/EmergencyContact'
+        is_active:
+          type: boolean
+          example: true
+        created_at:
+          type: string
+          format: date-time
+          example: 2024-01-01T12:00:00Z
+        updated_at:
+          type: string
+          format: date-time
+          example: 2024-01-01T12:00:00Z
+      required:
+        - id
+        - mrn
+        - first_name
+        - last_name
+        - date_of_birth
+        - gender
+        - is_active
+        - created_at
+        - updated_at
+
+    CreatePatientRequest:
+      type: object
+      properties:
+        mrn:
+          type: string
+          pattern: ^MRN\d{9}$
+          example: MRN123456789
+        first_name:
+          type: string
+          minLength: 1
+          maxLength: 100
+          example: John
+        last_name:
+          type: string
+          minLength: 1
+          maxLength: 100
+          example: Doe
+        middle_name:
+          type: string
+          maxLength: 100
+          example: William
+        date_of_birth:
+          type: string
+          format: date
+          example: 1990-01-01
+        gender:
+          type: string
+          enum: [male, female, other]
+          example: male
+        phone_number:
+          type: string
+          pattern: ^\+?[\d\s\-\(\)]+$
+          example: +1234567890
+        email:
+          type: string
+          format: email
+          example: john.doe@example.com
+        address:
+          $ref: '#/components/schemas/Address'
+        emergency_contact:
+          $ref: '#/components/schemas/EmergencyContact'
+      required:
+        - mrn
+        - first_name
+        - last_name
+        - date_of_birth
+        - gender
+
+    UpdatePatientRequest:
+      type: object
+      properties:
+        first_name:
+          type: string
+          minLength: 1
+          maxLength: 100
+        last_name:
+          type: string
+          minLength: 1
+          maxLength: 100
+        middle_name:
+          type: string
+          maxLength: 100
+        phone_number:
+          type: string
+          pattern: ^\+?[\d\s\-\(\)]+$
+        email:
+          type: string
+          format: email
+        address:
+          $ref: '#/components/schemas/Address'
+        emergency_contact:
+          $ref: '#/components/schemas/EmergencyContact'
+
+    Address:
+      type: object
+      properties:
+        street_address:
+          type: string
+          example: 123 Main St
+        city:
+          type: string
+          example: Anytown
+        state:
+          type: string
+          example: CA
+        postal_code:
+          type: string
+          example: 12345
+        country:
+          type: string
+          example: US
+
+    EmergencyContact:
+      type: object
+      properties:
+        name:
+          type: string
+          example: Jane Doe
+        relationship:
+          type: string
+          example: spouse
+        phone_number:
+          type: string
+          example: +1234567891
+
+    PatientSearchResult:
+      type: object
+      properties:
+        id:
+          type: string
+          example: patient-123
+        mrn:
+          type: string
+          example: MRN123456789
+        first_name:
+          type: string
+          example: John
+        last_name:
+          type: string
+          example: Doe
+        phone_number:
+          type: string
+          example: +1234567890
+        email:
+          type: string
+          example: john.doe@example.com
+        relevance_score:
+          type: number
+          minimum: 0
+          maximum: 1
+          example: 0.95
+
+    PaginationMeta:
+      type: object
+      properties:
+        pagination:
+          type: object
+          properties:
+            page:
+              type: integer
+              example: 1
+            limit:
+              type: integer
+              example: 50
+            total:
+              type: integer
+              example: 150
+            total_pages:
+              type: integer
+              example: 3
+            has_next:
+              type: boolean
+              example: true
+            has_prev:
+              type: boolean
+              example: false
+
+    Error:
+      type: object
+      properties:
+        error:
+          type: object
+          properties:
+            code:
+              type: string
+              example: PATIENT_NOT_FOUND
+            message:
+              type: string
+              example: Patient with ID '12345' not found
+            details:
+              oneOf:
+                - type: object
+                - type: string
+            timestamp:
+              type: string
+              format: date-time
+              example: 2024-01-01T12:00:00Z
+            request_id:
+              type: string
+              example: req_123456789
+      required:
+        - error
+
+  securitySchemes:
+    bearerAuth:
+      type: http
+      scheme: bearer
+      bearerFormat: JWT
+
+security:
+  - bearerAuth: []

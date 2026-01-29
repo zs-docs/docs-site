@@ -1,0 +1,8 @@
+{
+  "label": "Country Configurations",
+  "position": 4,
+  "link": {
+    "type": "generated-index",
+    "description": "FHIR R5 country-specific configurations and implementations"
+  }
+}

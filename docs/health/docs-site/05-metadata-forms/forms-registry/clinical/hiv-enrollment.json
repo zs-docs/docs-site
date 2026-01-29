@@ -1,0 +1,65 @@
+{
+  "name": "HIV Enrollment",
+  "description": "HIV Enrollment",
+  "version": "1",
+  "published": true,
+  "uuid": "e4b506c1-7379-42b6-a374-284469cba8da",
+  "retired": false,
+  "encounter": "HIV Enrollment",
+  "processor": "EncounterFormProcessor",
+  "referencedForms": [],
+  "meta": {
+    "programs": {
+      "uuid": "dfdc6d40-2f2f-463d-ba90-cc97350441a8",
+      "isEnrollment": true,
+      "discontinuationDateQuestionId": ""
+    }
+  },
+  "pages": [
+    {
+      "label": "HIV Enrollment",
+      "sections": [
+        {
+          "label": "Encounter Details",
+          "isExpanded": "true",
+          "questions": [
+            {
+              "label": "Visit date:",
+              "type": "encounterDatetime",
+              "required": "true",
+              "questionOptions": {
+                "rendering": "ui-select-extended"
+              },
+              "validators": [
+                {
+                  "type": "date",
+                  "allowFutureDates": "false"
+                }
+              ],
+              "id": "encDate"
+            },
+            {
+              "label": "Provider:",
+              "type": "encounterProvider",
+              "required": "true",
+              "questionOptions": {
+                "rendering": "ui-select-extended"
+              },
+              "id": "encProvider "
+            },
+            {
+              "label": "Location:",
+              "type": "encounterLocation",
+              "required": "true",
+              "questionOptions": {
+                "rendering": "ui-select-extended"
+              },
+              "id": "encLocation"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "encounterType": "de78a6be-bfc5-4634-adc3-5f1a280455cc"
+}

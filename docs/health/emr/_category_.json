@@ -1,0 +1,8 @@
+{
+  "label": "EMR",
+  "position": 1,
+  "link": {
+    "type": "generated-index",
+    "description": "Electronic Medical Records module documentation"
+  }
+}

@@ -1,0 +1,99 @@
+{
+	"name": "Postnatal Care (PNC) Discontinuation",
+	"description": "PNC Services Discontinuation",
+	"version": "1.0",
+	"published": true,
+	"uuid": "30db888b-d6d3-47fb-b0c9-dbdf10a57ff5",
+	"retired": false,
+	"encounter": "MCH Mother Discontinuation",
+	"meta": {
+	  "programs": {
+		"uuid": "955d4aa9-abd1-4876-9f0b-edffc008a935",
+		"isEnrollment": false,
+		"discontinuationDateQuestionId": ""
+	  }
+	},
+	"pages": [
+	  {
+		"label": "Postnatal Care (ANC) Services Discontinuation",
+		"sections": [
+		  {
+			"label": "Visit Details",
+			"isExpanded": "true",
+			"questions": [
+			  {
+				"label": "Discontinued Date:",
+				"type": "encounterDatetime",
+				"required": "true",
+				"questionOptions": {
+				  "rendering": "ui-select-extended"
+				},
+				"validators": [
+				  {
+					"type": "date",
+					"allowFutureDates": "false"
+				  }
+				],
+				"id": "encDate"
+			  },
+			  {
+				"label": "Provider:",
+				"type": "encounterProvider",
+				"required": "true",
+				"questionOptions": {
+				  "rendering": "ui-select-extended"
+				},
+				"id": "encProvider "
+			  },
+			  {
+				"label": "Location:",
+				"type": "encounterLocation",
+				"required": "true",
+				"questionOptions": {
+				  "rendering": "ui-select-extended"
+				},
+				"id": "encLocation"
+			  }
+			]
+		  },
+		  {
+			"label": "PNC Services Discontinuation",
+			"isExpanded": "true",
+			"questions": [
+			  {
+				"label": "Exit Criteria",
+				"type": "obs",
+				"required": "true",
+				"questionOptions": {
+				  "rendering": "select",
+				  "concept": "161555AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+				  "answers": [
+					{
+						"concept": "160035AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+						"label": "Postnatal care complete"
+					},
+					{
+					  "concept": "159492AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+					  "label": "Transferred Out"
+					},
+					{
+					  "concept": "5240AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+					  "label": "Lost to follow up"
+					},
+					{
+					  "concept": "160432AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+					  "label": "Died"
+					}
+				  ]
+				},
+				"id": "idReason"
+			  }
+			]
+		  }
+		]
+	  }
+	],
+	"processor": "EncounterFormProcessor",
+	"referencedForms": [],
+    "encounterType": "a5e55a35-e203-480a-aae0-b0f051f84277"
+  }

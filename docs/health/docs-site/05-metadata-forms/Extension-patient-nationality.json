@@ -1,0 +1,56 @@
+{
+  "resourceType": "StructureDefinition",
+  "id": "patient-nationality",
+  "url": "https://fhir.zs-his.com/StructureDefinition/patient-nationality",
+  "version": "1.0.0",
+  "name": "PatientNationality",
+  "title": "Patient Nationality Extension",
+  "status": "active",
+  "publisher": "ZARISH Health Tech",
+  "description": "Extension to capture patient nationality information for ZARISH HIS.",
+  "fhirVersion": "5.0.0",
+  "kind": "complex-type",
+  "abstract": false,
+  "type": "Extension",
+  "baseDefinition": "http://hl7.org/fhir/StructureDefinition/Extension",
+  "derivation": "constraint",
+  "jurisdiction": [
+    {
+      "coding": [
+        {
+          "system": "urn:iso:std:iso:3166",
+          "code": "BD",
+          "display": "Bangladesh"
+        }
+      ]
+    }
+  ],
+  "differential": {
+    "element": [
+      {
+        "id": "Extension",
+        "path": "Extension",
+        "short": "Patient Nationality",
+        "definition": "Extension to capture patient nationality information."
+      },
+      {
+        "id": "Extension.url",
+        "path": "Extension.url",
+        "fixedUri": "https://fhir.zs-his.com/StructureDefinition/patient-nationality"
+      },
+      {
+        "id": "Extension.value[x]",
+        "path": "Extension.value[x]",
+        "type": [
+          {
+            "code": "CodeableConcept"
+          }
+        ],
+        "binding": {
+          "strength": "required",
+          "valueSet": "https://fhir.zs-his.com/ValueSet/country-codes"
+        }
+      }
+    ]
+  }
+}
